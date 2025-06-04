@@ -71,6 +71,43 @@ export const HeaderMainText = styled.div`
   }
 `;
 
+export const LinkContainer = styled.div`
+  margin-bottom: 5rem;
+  text-align: center;
+
+  p {
+    color: var(--link-color);
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: var(--emerald);
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color 0.3s ease;
+
+    &:hover {
+      border-bottom-color: var(--emerald);
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 3rem;
+    
+    p {
+      font-size: 1rem;
+    }
+    
+    a {
+      font-size: 1rem;
+    }
+  }
+`;
+
 export const CardsContainer = styled.div`
   display: flex;
   align-items: center;

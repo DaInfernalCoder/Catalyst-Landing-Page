@@ -1,33 +1,25 @@
-'use client';
-import { useState } from 'react';
-import Image from 'next/image';
-import { Edge, Edges, Title } from '../FinancialFreedom/styles';
-import lola_card from '../../../../public/images/lola_card.png';
-import orange_card from '../../../../public/images/orange_card.png';
-import terry_card from '../../../../public/images/terry_card.png';
+"use client";
+import Image from "next/image";
+import { Edge, Edges, Title } from "../FinancialFreedom/styles";
 import {
   Wrapper,
   Inner,
   Header,
   HeaderMainText,
-  CardsContainer,
-  LeftImage,
-  MiddleImage,
-  RightImage,
-} from './styles';
-import { MaskText } from '@/components';
-import { useIsMobile } from '../../../../libs/useIsMobile';
+  LinkContainer,
+} from "./styles";
+import { MaskText } from "@/components";
+import { useIsMobile } from "../../../../libs/useIsMobile";
 import {
   desktopHeaderPhrase,
   desktopParagraphPhrase,
   edges,
   mobileHeaderPhrase,
   mobileParagraphPhrase,
-} from './constants';
+} from "./constants";
 
 const IntroSection = () => {
   const isMobile = useIsMobile();
-  const [isHovered, setIsHovered] = useState<boolean>(false);
 
   return (
     <Wrapper>
@@ -48,24 +40,18 @@ const IntroSection = () => {
             )}
           </HeaderMainText>
         </Header>
-        <CardsContainer>
-          <LeftImage
-            className={isHovered ? 'active' : ''}
-            src={orange_card}
-            alt="orange_atm_card"
-          />
-          <MiddleImage
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            src={lola_card}
-            alt="blue card"
-          />
-          <RightImage
-            className={isHovered ? 'active' : ''}
-            src={terry_card}
-            alt="terry card"
-          />
-        </CardsContainer>
+
+        <LinkContainer>
+          <p>Ready to start your entrepreneurship journey?</p>
+          <a
+            href="https://useultra.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit useultra.ai
+          </a>
+        </LinkContainer>
+
         <Edges>
           {edges.map((edge, i) => (
             <Edge key={i}>

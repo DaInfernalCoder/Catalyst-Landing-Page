@@ -24,7 +24,7 @@ export const offers = [
     illustration: seamless_payments,
     title: 'Monthly Expert Speakers',
     details:
-      'Learn from real founders, VCs, and Startup Club operators including Y Combinator alumni who share their journey and insights.',
+      'Learn from real founders, VCs, and Startup Club operators including Y Combinator alumni who share their journey and insights. These founders might also invest in your ideas.',
   },
   {
     illustration: smart_investing,
@@ -36,7 +36,7 @@ export const offers = [
     illustration: wealth_management,
     title: 'Founder Network Access',
     details:
-      'Connect directly with successful entrepreneurs, angel investors, and mentors through Ultra&apos;s exclusive network.',
+      "Connect directly with successful entrepreneurs, angel investors, and mentors through Ultra.ai's exclusive network.",
   },
   {
     illustration: financial_planning,

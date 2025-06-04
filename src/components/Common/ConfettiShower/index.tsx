@@ -145,7 +145,7 @@ const ConfettiShower: React.FC<ConfettiShowerProps> = ({
       intervals.forEach(clearTimeout);
       clearTimeout(cleanup);
     };
-  }, [isActive, onComplete, createConfettiPiece]);
+  }, [isActive, onComplete]);
 
   return (
     <AnimatePresence>

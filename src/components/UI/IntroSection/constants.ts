@@ -3,15 +3,15 @@ import ic_identification from '../../../../public/svgs/ic_identification.svg';
 import ic_lock_closed from '../../../../public/svgs/ic_lock_closed.svg';
 
 // For desktop
-export const desktopHeaderPhrase = ["Catalyst Entrepreneurship", 'Club Program'];
+export const desktopHeaderPhrase = ["Ultra Entrepreneurship", 'Fellowship'];
 export const desktopParagraphPhrase = [
-  " Join the Catalyst Entrepreneurship Club and follow our proven yearlong curriculum.",
+  " Join the Ultra Entrepreneurship Fellowship and follow our proven yearlong curriculum. The fellowship is backed by Ultra (YC W24) and Ivy League alumni.",
   'From problem discovery to Demo Day, we guide you through building',
   'your first Startup Club with real founder mentorship.',
 ];
 
 // For mobile
-export const mobileHeaderPhrase = ["Catalyst Entrepreneurship", 'Club Program'];
+export const mobileHeaderPhrase = ["Catalyst Entrepreneurship", 'Fellowship'];
 export const mobileParagraphPhrase = [
   " Join the Catalyst Entrepreneurship Club and follow our",
   ' proven yearlong curriculum. From problem discovery',
