@@ -68,3 +68,55 @@ export const SecondOverlay = styled.div`
   bottom: 0;
   right: 0;
 `;
+
+export const ScrollIndicator = styled.div`
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  z-index: 10000;
+
+  span {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--light-gray);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .scroll-icon {
+    font-size: 1.2rem;
+    color: var(--emerald);
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-5px);
+    }
+    60% {
+      transform: translateY(-3px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    bottom: 1rem;
+    left: 1rem;
+    
+    span {
+      font-size: 0.8rem;
+    }
+    
+    .scroll-icon {
+      font-size: 1rem;
+    }
+  }
+`;
