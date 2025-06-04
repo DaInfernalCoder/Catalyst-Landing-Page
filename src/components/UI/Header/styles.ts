@@ -58,9 +58,11 @@ export const BurgerMenu = styled.div`
 export const Nav = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 3.75rem;
-  position: relative;
-  margin-right: -6.3rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 
   a {
     color: var(--link-color);
@@ -75,6 +77,8 @@ export const Nav = styled.div`
     gap: 1rem;
     align-items: flex-start;
     right: 120px;
+    left: auto;
+    transform: none;
     z-index: 3;
     visibility: hidden;
     opacity: 0;
