@@ -3,10 +3,10 @@
 # Status: done
 # Dependencies: 1
 # Priority: medium
-# Description: Replace banking-related FAQs with startup club formation questions and answers.
+# Description: Replace banking-related FAQs with Startup Club club formation questions and answers.
 # Details:
 1. Locate the FAQ section component and its constants file
-2. Replace existing banking questions with startup club formation FAQs
+2. Replace existing banking questions with Startup Club club formation FAQs
 3. Update answers to reflect Catalyst's mission and process
 4. Ensure the accordion functionality continues to work properly
 5. Maintain existing animations and responsive behavior

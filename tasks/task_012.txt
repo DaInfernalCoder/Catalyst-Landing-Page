@@ -8,15 +8,15 @@
 This task requires a complete transformation of the website to properly represent Catalyst as a tech entrepreneurship club for students:
 
 1. Content Updates:
-   - Replace all mission statements to focus on: student entrepreneurship, startup creation, founder/investor connections, and business mentorship
+   - Replace all mission statements to focus on: student entrepreneurship, Startup Club creation, founder/investor connections, and business mentorship
    - Remove any banking/financial terminology and replace with entrepreneurship vocabulary
-   - Update hero section with "Build Your First Startup" messaging
+   - Update hero section with "Build Your First Startup Club" messaging
    - Transform features section to highlight club benefits:
      * Monthly speaker meetings with industry leaders
-     * Startup project guidance and resources
+     * Startup Club project guidance and resources
      * Networking opportunities with founders and VCs
      * Demo Day participation for student projects
-     * Internship connections with startups
+     * Internship connections with Startup Clubs
    - Revise FAQ section with questions relevant to student entrepreneurship clubs
    - Replace testimonials with student founder success stories
    - Update all CTAs to focus on club chapter applications and student signups

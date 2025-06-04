@@ -26,12 +26,12 @@ export const faqData: FAQItem[] = [
   {
     question: 'What happens during monthly club meetings?',
     answer:
-      'Each month features a guest speaker arranged by Catalyst—real founders, VCs, or startup operators including Y Combinator alumni. You&apos;ll also work on hands-on activities like problem discovery, business model development, and pitch practice.',
+      'Each month features a guest speaker arranged by Catalyst—real founders, VCs, or Startup Club operators including Y Combinator alumni. You&apos;ll also work on hands-on activities like problem discovery, business model development, and pitch practice.',
   },
   {
     question: 'What will I learn in the yearlong program?',
     answer:
-      'Follow our "Build Your First Startup" curriculum: Semester 1 focuses on discovering problems and defining solutions, while Semester 2 covers building MVPs, getting feedback, and pitching at Demo Day. You\'ll graduate with a real startup project.',
+      'Follow our "Build Your First Startup Club" curriculum: Semester 1 focuses on discovering problems and defining solutions, while Semester 2 covers building MVPs, getting feedback, and pitching at Demo Day. You\'ll graduate with a real Startup Club project.',
   },
   {
     question: 'Do I need prior business experience to join or start a club?',

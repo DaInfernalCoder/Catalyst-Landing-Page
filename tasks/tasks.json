@@ -13,11 +13,9 @@
     {
       "id": 2,
       "title": "Update Hero Section Content",
-      "description": "Transform the hero section content from banking-focused to tech startup club-focused messaging.",
+      "description": "Transform the hero section content from banking-focused to tech Startup Club club-focused messaging.",
       "status": "done",
-      "dependencies": [
-        1
-      ],
+      "dependencies": [1],
       "priority": "high",
       "details": "1. Locate src/components/UI/HeroSection/constants.ts\n2. Update desktop phrases from 'Building the future of banking' to 'Join the Bold. Build What's Next.'\n3. Replace desktop paragraph with 'Catalyst is the default community for the top 1% of ambitious young people across the globe.'\n4. Update mobile versions of the content for responsive display\n5. Update pill text throughout the component\n6. Ensure all animations and styling remain intact",
       "testStrategy": "Verify the hero section displays the new content correctly on both desktop and mobile viewports. Ensure all animations function as expected with the new content."
@@ -27,9 +25,7 @@
       "title": "Restructure Navigation",
       "description": "Update the navigation menu by removing 'Solutions' and adding 'Signup' while maintaining the existing responsive behavior.",
       "status": "done",
-      "dependencies": [
-        1
-      ],
+      "dependencies": [1],
       "priority": "high",
       "details": "1. Locate src/components/UI/Header/constants.ts\n2. Remove the 'Solutions' link from the navigation array\n3. Add a new 'Signup' link that scrolls to the signup form section\n4. Ensure the burger menu and animations continue to work properly\n5. Test responsive behavior across all breakpoints",
       "testStrategy": "Test navigation on desktop and mobile to ensure links work correctly. Verify the burger menu opens/closes properly and that the 'Signup' link scrolls to the correct section."
@@ -37,13 +33,11 @@
     {
       "id": 4,
       "title": "Transform Features Section",
-      "description": "Update the OffersSection to display startup club tools instead of banking features.",
+      "description": "Update the OffersSection to display Startup Club club tools instead of banking features.",
       "status": "done",
-      "dependencies": [
-        1
-      ],
+      "dependencies": [1],
       "priority": "medium",
-      "details": "1. Locate src/components/UI/OffersSection/constants.ts\n2. Update header phrases and paragraph content to focus on startup club benefits\n3. Replace all 4 offer cards with startup/education focused content\n4. Replace banking imagery with startup/education focused assets\n5. Maintain the existing card layout and animations\n6. Ensure responsive behavior is preserved",
+      "details": "1. Locate src/components/UI/OffersSection/constants.ts\n2. Update header phrases and paragraph content to focus on Startup Club club benefits\n3. Replace all 4 offer cards with Startup Club/education focused content\n4. Replace banking imagery with Startup Club/education focused assets\n5. Maintain the existing card layout and animations\n6. Ensure responsive behavior is preserved",
       "testStrategy": "Verify all content in the features section is updated and displays correctly. Test animations and hover effects on the cards. Check responsive layout on multiple screen sizes."
     },
     {
@@ -61,9 +55,7 @@
       "title": "Create Supabase Database Schema",
       "description": "Set up the Supabase database schema for storing student registration information.",
       "status": "done",
-      "dependencies": [
-        5
-      ],
+      "dependencies": [5],
       "priority": "high",
       "details": "1. Create a new 'registrations' table in Supabase with the following fields:\n   - id (uuid, primary key)\n   - created_at (timestamp with timezone)\n   - name (text, not null)\n   - email (text, not null)\n   - school (text, not null)\n   - message (text)\n2. Set up appropriate validation rules and indexes\n3. Configure Row Level Security (RLS) policies for secure access\n4. Create environment variables for Supabase URL and API key",
       "testStrategy": "Test the database schema by manually inserting and retrieving test records. Verify all fields store data correctly and that validation rules work as expected."
@@ -73,10 +65,7 @@
       "title": "Implement Signup Form Component",
       "description": "Replace the JoinSection testimonial carousel with a signup form for student registration.",
       "status": "done",
-      "dependencies": [
-        5,
-        6
-      ],
+      "dependencies": [5, 6],
       "priority": "high",
       "details": "1. Transform src/components/UI/JoinSection/ from testimonial carousel to signup form\n2. Create form fields for: name, email, school/university, year of study, and area of interest\n3. Implement form validation using client-side validation with smooth error state animations\n4. Style the form using Styled Components to match the site's design system:\n   - Maintain emerald background (#48d64c)\n   - Use SF Pro Display font family with consistent sizing\n   - Follow layout patterns (90% width, max-width 1440px, centered)\n   - Implement responsive design (mobile-first with 768px breakpoint)\n5. Implement Framer Motion animations following existing patterns:\n   - Use MaskText for header text reveal animations\n   - Apply useInView hook for viewport-triggered animations\n   - Implement staggered input field animations (0.1s delays)\n   - Add RevealCover-style animations for form container\n   - Create AnimatedLink-style hover effects for submit button\n6. Ensure the form is fully responsive following existing mobile/desktop patterns\n7. Implement loading states (1-1.4s durations), success state animations, and error handling with consistent easing patterns",
       "testStrategy": "1. Test form validation with various inputs including edge cases\n2. Verify responsive behavior across different screen sizes (especially at 768px breakpoint)\n3. Check that animations work correctly during form submission, success states, and error states\n4. Verify animation timing and easing matches existing patterns\n5. Test accessibility of form elements and animations\n6. Ensure visual consistency with the existing design system\n7. Test form submission flow with mock API responses"
@@ -86,10 +75,7 @@
       "title": "Integrate Supabase with Signup Form",
       "description": "Connect the signup form to Supabase for data storage and implement form submission logic.",
       "status": "done",
-      "dependencies": [
-        6,
-        7
-      ],
+      "dependencies": [6, 7],
       "priority": "high",
       "details": "1. Create a Next.js API route for form submission\n2. Initialize Supabase client with environment variables\n3. Implement form submission handler that sends data to the API route\n4. Add data validation on the server side\n5. Store valid submissions in the Supabase 'registrations' table\n6. Implement error handling and success feedback\n7. Add appropriate loading states during submission",
       "testStrategy": "Test the full submission flow with valid and invalid data. Verify data is correctly stored in Supabase. Test error handling by simulating network failures and validation errors."
@@ -97,13 +83,11 @@
     {
       "id": 10,
       "title": "Update FAQ Section Content",
-      "description": "Replace banking-related FAQs with startup club formation questions and answers.",
+      "description": "Replace banking-related FAQs with Startup Club club formation questions and answers.",
       "status": "done",
-      "dependencies": [
-        1
-      ],
+      "dependencies": [1],
       "priority": "medium",
-      "details": "1. Locate the FAQ section component and its constants file\n2. Replace existing banking questions with startup club formation FAQs\n3. Update answers to reflect Catalyst's mission and process\n4. Ensure the accordion functionality continues to work properly\n5. Maintain existing animations and responsive behavior",
+      "details": "1. Locate the FAQ section component and its constants file\n2. Replace existing banking questions with Startup Club club formation FAQs\n3. Update answers to reflect Catalyst's mission and process\n4. Ensure the accordion functionality continues to work properly\n5. Maintain existing animations and responsive behavior",
       "testStrategy": "Verify all FAQ content is updated and displays correctly. Test accordion functionality to ensure it opens and closes properly. Check responsive behavior on different screen sizes."
     },
     {
@@ -111,9 +95,7 @@
       "title": "Update Remaining Content Sections",
       "description": "Update content in Featured, Testimonials, and Footer sections to align with the Catalyst brand.",
       "status": "done",
-      "dependencies": [
-        1
-      ],
+      "dependencies": [1],
       "priority": "medium",
       "details": "1. Update Featured Section: Replace publication logos and 'Featured and Seen in' text\n2. Update Testimonials: Replace with student entrepreneur success stories\n3. Update Footer: Change company information, social links, and any other Raft-specific content\n4. Ensure all content aligns with the Catalyst brand identity\n5. Maintain existing layouts and animations",
       "testStrategy": "Verify all content sections display updated information correctly. Check that links in the footer work properly. Test responsive behavior across different screen sizes."
@@ -122,7 +104,7 @@
       "id": 12,
       "title": "Rebrand Site Components for Catalyst Entrepreneurship Club (Catalyst)",
       "description": "Comprehensively update all website components to reflect Catalyst as the Catalyst Entrepreneurship Club for students, removing any references to banking/financial services and implementing entrepreneurship-focused content throughout the site.",
-      "details": "This task requires a complete transformation of the website to properly represent Catalyst as a tech entrepreneurship club for students:\n\n1. Content Updates:\n   - Replace all mission statements to focus on: student entrepreneurship, startup creation, founder/investor connections, and business mentorship\n   - Remove any banking/financial terminology and replace with entrepreneurship vocabulary\n   - Update hero section with \"Build Your First Startup\" messaging\n   - Transform features section to highlight club benefits:\n     * Monthly speaker meetings with industry leaders\n     * Startup project guidance and resources\n     * Networking opportunities with founders and VCs\n     * Demo Day participation for student projects\n     * Internship connections with startups\n   - Revise FAQ section with questions relevant to student entrepreneurship clubs\n   - Replace testimonials with student founder success stories\n   - Update all CTAs to focus on club chapter applications and student signups\n\n2. Program Structure:\n   - Incorporate content about the yearlong syllabus structure:\n     * First semester: Discover & Define phase\n     * Second semester: Build & Pitch phase\n   - Add information about Catalyst partnership benefits\n   - Include Y Combinator connections and mentorship opportunities\n\n3. Branding Elements:\n   - Update footer information with Catalyst Entrepreneurship Club details\n   - Revise contact information to align with club structure\n   - Ensure all visual elements match entrepreneurship club branding\n   - Review and update all meta descriptions and page titles\n\n4. Technical Considerations:\n   - Maintain responsive design across all updated components\n   - Ensure accessibility standards are maintained\n   - Update any relevant metadata or SEO elements\n   - Check for and fix any broken links resulting from content changes",
+      "details": "This task requires a complete transformation of the website to properly represent Catalyst as a tech entrepreneurship club for students:\n\n1. Content Updates:\n   - Replace all mission statements to focus on: student entrepreneurship, Startup Club creation, founder/investor connections, and business mentorship\n   - Remove any banking/financial terminology and replace with entrepreneurship vocabulary\n   - Update hero section with \"Build Your First Startup Club\" messaging\n   - Transform features section to highlight club benefits:\n     * Monthly speaker meetings with industry leaders\n     * Startup Club project guidance and resources\n     * Networking opportunities with founders and VCs\n     * Demo Day participation for student projects\n     * Internship connections with Startup Clubs\n   - Revise FAQ section with questions relevant to student entrepreneurship clubs\n   - Replace testimonials with student founder success stories\n   - Update all CTAs to focus on club chapter applications and student signups\n\n2. Program Structure:\n   - Incorporate content about the yearlong syllabus structure:\n     * First semester: Discover & Define phase\n     * Second semester: Build & Pitch phase\n   - Add information about Catalyst partnership benefits\n   - Include Y Combinator connections and mentorship opportunities\n\n3. Branding Elements:\n   - Update footer information with Catalyst Entrepreneurship Club details\n   - Revise contact information to align with club structure\n   - Ensure all visual elements match entrepreneurship club branding\n   - Review and update all meta descriptions and page titles\n\n4. Technical Considerations:\n   - Maintain responsive design across all updated components\n   - Ensure accessibility standards are maintained\n   - Update any relevant metadata or SEO elements\n   - Check for and fix any broken links resulting from content changes",
       "testStrategy": "To verify successful implementation:\n\n1. Content Verification:\n   - Conduct a comprehensive text search for banking/financial terms to ensure complete removal\n   - Verify all sections (hero, features, FAQ, testimonials, CTAs) contain entrepreneurship-focused content\n   - Confirm the yearlong syllabus structure is clearly presented\n   - Check that Catalyst partnership and Y Combinator connections are properly highlighted\n\n2. Visual Testing:\n   - Test the site on multiple devices (desktop, tablet, mobile) to ensure responsive design\n   - Verify all images and graphics align with entrepreneurship themes\n   - Ensure consistent branding throughout the site\n\n3. Functional Testing:\n   - Test all CTAs and forms to confirm they direct to appropriate club application/signup endpoints\n   - Verify navigation elements correctly link to updated content sections\n   - Test any interactive elements to ensure they work with new content\n\n4. User Acceptance Testing:\n   - Have 3-5 students unfamiliar with the site review it and confirm they understand it's an entrepreneurship club\n   - Ask testers to identify the main purpose and benefits of the club based solely on site content\n   - Collect feedback on clarity of messaging and any remaining confusing elements\n\n5. SEO Verification:\n   - Check that meta descriptions, page titles, and alt text reflect entrepreneurship focus\n   - Verify schema markup is updated if applicable\n\nPass criteria: Site contains zero banking references, clearly communicates Catalyst Entrepreneurship Club mission, presents all club benefits, and provides clear pathways for student engagement.",
       "status": "done",
       "dependencies": [],

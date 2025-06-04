@@ -4,13 +4,13 @@ export const cardsInfo = [
   {
     title: 'Build Better',
     details:
-      'Transform your ideas into viable startups with our proven curriculum, expert mentorship, and hands-on project guidance.',
+      'Transform your ideas into viable Startup Clubs with our proven curriculum, expert mentorship, and hands-on project guidance.',
     icon: ic_money_send,
   },
   {
     title: 'Connect Better',
     details:
-      'Network with successful founders, VCs, and fellow student entrepreneurs who can accelerate your startup journey.',
+      'Network with successful founders, VCs, and fellow student entrepreneurs who can accelerate your Startup Club journey.',
     icon: ic_wallet_minus,
   },
 ];
@@ -30,28 +30,28 @@ export const stats = [
   },
   {
     number: '25+',
-    subtitle: 'startups launched',
+    subtitle: 'Startup Clubs launched',
   },
 ];
 
 // For desktop
 export const desktopHeaderPhrase = [
-  'Build Your Startup',
+  'Build Your Startup Club',
   'With Confidence',
 ];
 export const desktopParagraphPhrase = [
   'Catalyst Entrepreneurship Club gives you the tools, mentorship, and community to build',
-  'your first startup with confidence. Join thousands of student founders worldwide.',
+  'your first Startup Club with confidence. Join thousands of student founders worldwide.',
 ];
 
 // For mobile
 export const mobileHeaderPhrase = [
-  'Build Your Startup',
+  'Build Your Startup Club',
   ' With Confidence',
 ];
 export const mobileParagraphPhrase = [
   'Catalyst Entrepreneurship Club gives you the tools,',
   'mentorship, and community to build your first',
-  'startup with confidence. Join thousands of',
+  'Startup Club with confidence. Join thousands of',
   'student founders worldwide.',
 ];

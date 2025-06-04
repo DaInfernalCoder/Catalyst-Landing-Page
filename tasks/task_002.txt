@@ -3,7 +3,7 @@
 # Status: done
 # Dependencies: 1
 # Priority: high
-# Description: Transform the hero section content from banking-focused to tech startup club-focused messaging.
+# Description: Transform the hero section content from banking-focused to tech Startup Club club-focused messaging.
 # Details:
 1. Locate src/components/UI/HeroSection/constants.ts
 2. Update desktop phrases from 'Building the future of banking' to 'Join the Bold. Build What's Next.'

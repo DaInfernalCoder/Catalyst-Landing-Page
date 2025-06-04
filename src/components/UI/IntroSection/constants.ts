@@ -7,7 +7,7 @@ export const desktopHeaderPhrase = ["Catalyst Entrepreneurship", 'Club Program']
 export const desktopParagraphPhrase = [
   " Join the Catalyst Entrepreneurship Club and follow our proven yearlong curriculum.",
   'From problem discovery to Demo Day, we guide you through building',
-  'your first startup with real founder mentorship.',
+  'your first Startup Club with real founder mentorship.',
 ];
 
 // For mobile
@@ -16,20 +16,20 @@ export const mobileParagraphPhrase = [
   " Join the Catalyst Entrepreneurship Club and follow our",
   ' proven yearlong curriculum. From problem discovery',
   'to Demo Day, we guide you through building',
-  'your first startup with real founder mentorship.',
+  'your first Startup Club with real founder mentorship.',
 ];
 
 export const edges = [
   {
     point: 'Monthly Expert Speakers',
     details:
-      'Learn from real founders, VCs, and startup operators including Y Combinator alumni who share practical insights and industry knowledge.',
+      'Learn from real founders, VCs, and Startup Club operators including Y Combinator alumni who share practical insights and industry knowledge.',
     icon: ic_document_duplicate,
   },
   {
     point: 'Hands-On Curriculum',
     details:
-      'Follow our structured yearlong program: Discover & Define problems in Semester 1, then Build & Pitch your startup in Semester 2.',
+      'Follow our structured yearlong program: Discover & Define problems in Semester 1, then Build & Pitch your Startup Club in Semester 2.',
     icon: ic_identification,
   },
   {

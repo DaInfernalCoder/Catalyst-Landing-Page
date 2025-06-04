@@ -8,14 +8,14 @@ export const desktopHeaderPhrases = [
   'Build Your Own Club That Has Real Impact',
 ];
 export const desktopParagraphPhrase = [
-  'Catalyst Entrepreneurship Club provides monthly expert speakers, startup guidance,',
+  'Catalyst Entrepreneurship Club provides monthly expert speakers, Startup Club guidance,',
   'and real-world connections to help you launch your first club focused on entrepreneurship and tech.',
 ];
 
 // For mobile
 export const mobileParagraphPhrase = [
   'Catalyst Entrepreneurship Club provides monthly expert',
-  'speakers, startup guidance, and real-world connections',
+  'speakers, Startup Club guidance, and real-world connections',
   'to help you launch your first company.',
 ];
 
@@ -24,13 +24,13 @@ export const offers = [
     illustration: seamless_payments,
     title: 'Monthly Expert Speakers',
     details:
-      'Learn from real founders, VCs, and startup operators including Y Combinator alumni who share their journey and insights.',
+      'Learn from real founders, VCs, and Startup Club operators including Y Combinator alumni who share their journey and insights.',
   },
   {
     illustration: smart_investing,
-    title: 'Startup Project Guidance',
+    title: 'Startup Club Project Guidance',
     details:
-      'Follow our proven yearlong syllabus to build your first startup from problem discovery to Demo Day pitch.',
+      'Follow our proven yearlong syllabus to build your first Startup Club from problem discovery to Demo Day pitch.',
   },
   {
     illustration: wealth_management,
@@ -42,6 +42,6 @@ export const offers = [
     illustration: financial_planning,
     title: 'Demo Day & Competitions',
     details:
-      'Pitch your startup to judges, compete for recognition, and gain access to internships and funding opportunities.',
+      'Pitch your Startup Club to judges, compete for recognition, and gain access to internships and funding opportunities.',
   },
 ];

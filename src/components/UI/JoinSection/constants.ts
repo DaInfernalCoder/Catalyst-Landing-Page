@@ -82,7 +82,7 @@ export const formFields = [
     name: 'message' as keyof FormData,
     label: 'Tell us about yourself (Optional)',
     type: 'textarea',
-    placeholder: 'Share your entrepreneurial goals, startup ideas, or what you hope to achieve with Catalyst Entrepreneurship Club...',
+    placeholder: 'Share your entrepreneurial goals, Startup Club ideas, or what you hope to achieve with Catalyst Entrepreneurship Club...',
     required: false,
   },
 ];
