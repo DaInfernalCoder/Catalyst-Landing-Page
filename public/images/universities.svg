@@ -1,0 +1,31 @@
+<svg width="1200" height="80" viewBox="0 0 1200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Harvard University -->
+  <g transform="translate(80, 25)">
+    <text x="0" y="30" fill="white" font-family="serif" font-size="26" font-weight="600" letter-spacing="2.5px">HARVARD</text>
+  </g>
+  
+  <!-- MIT -->
+  <g transform="translate(260, 25)">
+    <text x="0" y="30" fill="white" font-family="sans-serif" font-size="30" font-weight="800" letter-spacing="4px">MIT</text>
+  </g>
+  
+  <!-- Stanford -->
+  <g transform="translate(380, 25)">
+    <text x="0" y="30" fill="white" font-family="serif" font-size="26" font-weight="600" letter-spacing="2.5px">STANFORD</text>
+  </g>
+  
+  <!-- Yale -->
+  <g transform="translate(600, 25)">
+    <text x="0" y="30" fill="white" font-family="serif" font-size="28" font-weight="600" letter-spacing="3px">YALE</text>
+  </g>
+  
+  <!-- Princeton -->
+  <g transform="translate(720, 25)">
+    <text x="0" y="30" fill="white" font-family="serif" font-size="24" font-weight="600" letter-spacing="2px">PRINCETON</text>
+  </g>
+  
+  <!-- Columbia -->
+  <g transform="translate(940, 25)">
+    <text x="0" y="30" fill="white" font-family="serif" font-size="24" font-weight="600" letter-spacing="2px">COLUMBIA</text>
+  </g>
+</svg> 

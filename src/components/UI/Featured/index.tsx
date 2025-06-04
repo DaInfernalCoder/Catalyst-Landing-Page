@@ -3,7 +3,7 @@ import Image from "next/image";
 import big_banner from "../../../../public/images/big_banner.png";
 import featured_mobile_banner from "../../../../public/images/featured_mobile_banner.png";
 import ParallaxText from "@/components/Common/ParallaxImages";
-import companies_image from "../../../../public/images/companies.png";
+import universities_image from "../../../../public/images/universities.svg";
 import { Wrapper, Inner, ImageContainer, ParallaxImages, Div } from "./styles";
 import RevealCover from "@/components/Common/RevealCover";
 import { useIsMobile } from "../../../../libs/useIsMobile";
@@ -48,7 +48,10 @@ const Featured = () => {
         <h2>Student Founders From Top Universities</h2>
         <ParallaxImages>
           <ParallaxText baseVelocity={-4}>
-            <Image src={companies_image} alt="universities and institutions" />
+            <Image
+              src={universities_image}
+              alt="top universities and institutions"
+            />
           </ParallaxText>
         </ParallaxImages>
       </Inner>

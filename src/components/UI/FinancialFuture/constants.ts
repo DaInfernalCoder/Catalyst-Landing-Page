@@ -17,20 +17,20 @@ export const cardsInfo = [
 
 export const stats = [
   {
-    number: '100+',
+    number: '5+',
     subtitle: 'schools',
   },
   {
-    number: '500+',
+    number: '50+',
     subtitle: 'student founders',
   },
   {
-    number: '50+',
+    number: '10+',
     subtitle: 'expert speakers',
   },
   {
-    number: '25+',
-    subtitle: 'Startup Clubs launched',
+    number: '1+',
+    subtitle: 'startup clubs',
   },
 ];
 
