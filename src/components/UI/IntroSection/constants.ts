@@ -3,39 +3,39 @@ import ic_identification from '../../../../public/svgs/ic_identification.svg';
 import ic_lock_closed from '../../../../public/svgs/ic_lock_closed.svg';
 
 // For desktop
-export const desktopHeaderPhrase = ["Introducing RAFT's Next-", 'Gen Cards'];
+export const desktopHeaderPhrase = ["Introducing Catalyst's", 'Startup Toolkit'];
 export const desktopParagraphPhrase = [
-  " Discover RAFT's latest innovation – our new cards. Elevate your banking",
-  'experience with cutting-edge features, security, and unprecedented',
-  'convenience.',
+  " Discover Catalyst's comprehensive toolkit designed for ambitious students.",
+  'Access mentorship, resources, and community support to transform your',
+  'ideas into successful startups.',
 ];
 
 // For mobile
-export const mobileHeaderPhrase = ["Introducing RAFT's", 'Next-Gen Cards'];
+export const mobileHeaderPhrase = ["Introducing Catalyst's", 'Startup Toolkit'];
 export const mobileParagraphPhrase = [
-  " Discover RAFT's latest innovation – our new cards.",
-  ' Elevate your banking experience with cutting-edge',
-  'features, security, and unprecedented',
-  'convenience.',
+  " Discover Catalyst's comprehensive toolkit designed",
+  ' for ambitious students. Access mentorship, resources,',
+  'and community support to transform your',
+  'ideas into successful startups.',
 ];
 
 export const edges = [
   {
-    point: 'Contactless Technology',
+    point: 'Mentorship Network',
     details:
-      'Our new cards come equipped with contactless technology, allowing you to make swift, secure payments with a simple tap.',
+      'Connect with successful entrepreneurs and industry experts who provide guidance, feedback, and support for your startup journey.',
     icon: ic_document_duplicate,
   },
   {
-    point: 'Personalization',
+    point: 'Resource Library',
     details:
-      'Customize your card to reflect your unique style. Choose from a range of designs that suit your personality.',
+      'Access comprehensive startup resources including business plan templates, funding guides, and technical workshops tailored for student entrepreneurs.',
     icon: ic_identification,
   },
   {
-    point: 'Enhanced Security',
+    point: 'Community Support',
     details:
-      'Your peace of mind is our priority. Our cards feature advanced security measures to protect your transactions and data.',
+      'Join a network of like-minded ambitious students who share ideas, collaborate on projects, and support each other&apos;s entrepreneurial goals.',
     icon: ic_lock_closed,
   },
 ];

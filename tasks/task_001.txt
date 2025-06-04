@@ -1,0 +1,14 @@
+# Task ID: 1
+# Title: Update Brand Assets and Metadata
+# Status: done
+# Dependencies: None
+# Priority: high
+# Description: Replace Raft branding with Catalyst across the application, including logo files, metadata, and preloader animation.
+# Details:
+1. Update metadata in src/app/layout.tsx, changing title from 'Raft' to 'Catalyst'
+2. Replace logo files in public/svgs/: raft_logo.svg and raft_footer_logo.svg with new Catalyst logos
+3. Update preloader animation in the Preloader component by changing the word array from ['R', 'a', 'f', 't'] to ['C', 'a', 't', 'a', 'l', 'y', 's', 't']
+4. Ensure all global styles referencing the brand name are updated
+
+# Test Strategy:
+Verify all instances of 'Raft' are replaced with 'Catalyst' throughout the application. Check that the preloader animation correctly displays 'Catalyst' and that the new logos are properly rendered in all viewports.

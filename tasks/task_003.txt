@@ -1,0 +1,15 @@
+# Task ID: 3
+# Title: Restructure Navigation
+# Status: done
+# Dependencies: 1
+# Priority: high
+# Description: Update the navigation menu by removing 'Solutions' and adding 'Signup' while maintaining the existing responsive behavior.
+# Details:
+1. Locate src/components/UI/Header/constants.ts
+2. Remove the 'Solutions' link from the navigation array
+3. Add a new 'Signup' link that scrolls to the signup form section
+4. Ensure the burger menu and animations continue to work properly
+5. Test responsive behavior across all breakpoints
+
+# Test Strategy:
+Test navigation on desktop and mobile to ensure links work correctly. Verify the burger menu opens/closes properly and that the 'Signup' link scrolls to the correct section.

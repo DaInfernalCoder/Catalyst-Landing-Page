@@ -4,44 +4,44 @@ import wealth_management from '../../../../public/images/wealth_management.png';
 import financial_planning from '../../../../public/images/financial_planning.png';
 // For desktop
 export const desktopHeaderPhrases = [
-  'Elevate Your Financial',
-  'Journey with RAFT',
+  'Tools to Build Your',
+  'Startup Dreams',
 ];
 export const desktopParagraphPhrase = [
-  'RAFT offers a world of financial possibilities. From investments to payments,',
-  "we've got you covered. Join us and unlock your potential today.",
+  'Catalyst provides the essential tools and resources ambitious students need',
+  'to turn their ideas into successful startups. Join the community and start building.',
 ];
 
 // For mobile
 export const mobileParagraphPhrase = [
-  'RAFT offers a world of financial possibilities. From',
-  "investments to payments, we've got you covered.",
-  'Join us and unlock your potential today.',
+  'Catalyst provides the essential tools and resources',
+  'ambitious students need to turn their ideas into',
+  'successful startups. Join the community and start building.',
 ];
 
 export const offers = [
   {
     illustration: seamless_payments,
-    title: 'Seamless Payments',
+    title: 'Idea Validation',
     details:
-      'Enjoy secure, seamless transactions that make managing your money a breeze.',
+      'Test and validate your startup ideas with our community of ambitious entrepreneurs and industry experts.',
   },
   {
     illustration: smart_investing,
-    title: 'Smart Investing',
+    title: 'Mentorship Network',
     details:
-      'Grow your wealth confidently with our personalized investment solutions, tailored to your financial goals.',
+      'Connect with successful entrepreneurs and industry leaders who provide guidance and support for your journey.',
   },
   {
     illustration: wealth_management,
-    title: 'Wealth Management',
+    title: 'Resource Library',
     details:
-      'Make informed decisions for your financial future with our wealth management expertise.',
+      'Access curated resources, templates, and tools designed specifically for student entrepreneurs.',
   },
   {
     illustration: financial_planning,
-    title: 'Financial Planning',
+    title: 'Community Events',
     details:
-      'Achieve your financial dreams with our comprehensive financial planning services, guiding you toward a secure future.',
+      'Join exclusive workshops, pitch competitions, and networking events to accelerate your startup growth.',
   },
 ];

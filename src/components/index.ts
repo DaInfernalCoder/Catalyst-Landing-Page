@@ -11,3 +11,4 @@ export { default as FAQ } from './UI/FAQ';
 export { default as Footer } from './UI/Footer';
 export { default as Preloader } from './UI/Preloader';
 export { default as MaskText } from './Common/MaskText';
+export { default as ConfettiShower } from './Common/ConfettiShower';

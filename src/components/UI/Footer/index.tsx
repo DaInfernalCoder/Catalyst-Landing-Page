@@ -1,23 +1,23 @@
-import Image from 'next/image';
-import raft_footer_logo from '../../../../public/svgs/raft_footer_logo.svg';
-import qr_code from '../../../../public/svgs/qr_code.svg';
-import ic_google_playstore from '../../../../public/svgs/ic_google_playstore.svg';
-import ic_baseline_apple from '../../../../public/svgs/ic_baseline_apple.svg';
-import ic_chevron_down from '../../../../public/svgs/ic_chevron_down.svg';
-import ic_copyright from '../../../../public/svgs/ic_copyright.svg';
+import Image from "next/image";
+import catalyst_footer_logo from "../../../../public/svgs/catalyst_footer_logo.svg";
+import qr_code from "../../../../public/svgs/qr_code.svg";
+import ic_google_playstore from "../../../../public/svgs/ic_google_playstore.svg";
+import ic_baseline_apple from "../../../../public/svgs/ic_baseline_apple.svg";
+import ic_chevron_down from "../../../../public/svgs/ic_chevron_down.svg";
+import ic_copyright from "../../../../public/svgs/ic_copyright.svg";
 
 const linksArr = [
   {
-    title: 'About us',
-    links: ['Our Company', 'Careers', 'Press kits'],
+    title: "Community",
+    links: ["About Catalyst", "Join Us", "Success Stories"],
   },
   {
-    title: 'Legal',
-    links: ['Terms of use', 'Privacy policy', 'About us'],
+    title: "Resources",
+    links: ["Startup Tools", "Mentorship", "Workshops"],
   },
   {
-    title: 'About us',
-    links: ['Contact us', 'FAQ'],
+    title: "Support",
+    links: ["Contact Us", "FAQ", "Help Center"],
   },
 ];
 
@@ -37,14 +37,14 @@ import {
   FooterBottom,
   Translator,
   CopyRight,
-} from './styles';
+} from "./styles";
 
 const Footer = () => {
   return (
     <Wrapper>
       <Inner>
         <FooterLogo>
-          <Image src={raft_footer_logo} alt="raft_footer_logo" />
+          <Image src={catalyst_footer_logo} alt="catalyst_footer_logo" />
         </FooterLogo>
         <FooterMainContent>
           <FooterMiddle>
@@ -53,7 +53,9 @@ const Footer = () => {
                 <Image src={qr_code} alt="qr_code" />
               </QRImageCtn>
               <TextCtn>
-                <p>Scan to download App on the Playstore and Appstore.</p>
+                <p>
+                  Scan to join our community and start building your startup.
+                </p>
                 <IconCtn>
                   <Image src={ic_google_playstore} alt="playstore icon" />
                   <Image src={ic_baseline_apple} alt="apple icon" />
@@ -75,12 +77,12 @@ const Footer = () => {
           </FooterMiddle>
           <FooterBottom>
             <Translator>
-              <h3>English (United Kingdom)</h3>
+              <h3>English (United States)</h3>
               <Image src={ic_chevron_down} alt="chevron down" />
             </Translator>
             <CopyRight>
               <Image src={ic_copyright} alt="copyright svg" />
-              Raft Corp, LLC.
+              Catalyst Community, LLC.
             </CopyRight>
           </FooterBottom>
         </FooterMainContent>

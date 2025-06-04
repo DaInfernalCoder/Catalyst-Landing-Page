@@ -40,7 +40,7 @@ export const desktopHeaderPhrase = [
   'Financial Future',
 ];
 export const desktopParagraphPhrase = [
-  'At RAFT, we empower you to confidently shape your financial future. Our modern',
+  'At Catalyst, we empower you to confidently shape your financial future. Our modern',
   'approach simplifies saving and investing, making it easier than ever.',
 ];
 
@@ -50,7 +50,7 @@ export const mobileHeaderPhrase = [
   ' Your Financial Future',
 ];
 export const mobileParagraphPhrase = [
-  'At RAFT, we empower you to confidently shape',
+  'At Catalyst, we empower you to confidently shape',
   'your financial future. Our modern approach',
   'simplifies saving and investing, making it easier',
   'than ever.',

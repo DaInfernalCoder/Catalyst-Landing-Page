@@ -1,0 +1,16 @@
+# Task ID: 2
+# Title: Update Hero Section Content
+# Status: done
+# Dependencies: 1
+# Priority: high
+# Description: Transform the hero section content from banking-focused to tech startup club-focused messaging.
+# Details:
+1. Locate src/components/UI/HeroSection/constants.ts
+2. Update desktop phrases from 'Building the future of banking' to 'Join the Bold. Build What's Next.'
+3. Replace desktop paragraph with 'Catalyst is the default community for the top 1% of ambitious young people across the globe.'
+4. Update mobile versions of the content for responsive display
+5. Update pill text throughout the component
+6. Ensure all animations and styling remain intact
+
+# Test Strategy:
+Verify the hero section displays the new content correctly on both desktop and mobile viewports. Ensure all animations function as expected with the new content.

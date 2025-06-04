@@ -1,13 +1,13 @@
 // For desktop
-export const phrases = ['Building the future of', 'banking.'];
+export const phrases = ['Join the Bold.', "Build Something That Matters."];
 export const paragraphPhrases = [
-  "Experience the future of banking with RAFT. We're here to",
-  'empower your financial journey.',
+  'Catalyst is the default community for the top 1% of',
+  'ambitious high school and college students across the globe.',
 ];
 
 // For mobile
-export const mobilePhrases = ['Building the future', 'of banking'];
+export const mobilePhrases = ['Join the Bold.', 'Build What&apos;s Next.'];
 export const mobileParagraphPhrases = [
-  "Experience the future of banking with RAFT. We're",
-  'here to empower your financial journey.',
+  'Catalyst is the default community for the top 1%',
+  'of ambitious young people across the globe.',
 ];

@@ -1,0 +1,20 @@
+# Task ID: 6
+# Title: Create Supabase Database Schema
+# Status: done
+# Dependencies: 5
+# Priority: high
+# Description: Set up the Supabase database schema for storing student registration information.
+# Details:
+1. Create a new 'registrations' table in Supabase with the following fields:
+   - id (uuid, primary key)
+   - created_at (timestamp with timezone)
+   - name (text, not null)
+   - email (text, not null)
+   - school (text, not null)
+   - message (text)
+2. Set up appropriate validation rules and indexes
+3. Configure Row Level Security (RLS) policies for secure access
+4. Create environment variables for Supabase URL and API key
+
+# Test Strategy:
+Test the database schema by manually inserting and retrieving test records. Verify all fields store data correctly and that validation rules work as expected.

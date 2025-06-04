@@ -1,0 +1,17 @@
+# Task ID: 8
+# Title: Integrate Supabase with Signup Form
+# Status: done
+# Dependencies: 6, 7
+# Priority: high
+# Description: Connect the signup form to Supabase for data storage and implement form submission logic.
+# Details:
+1. Create a Next.js API route for form submission
+2. Initialize Supabase client with environment variables
+3. Implement form submission handler that sends data to the API route
+4. Add data validation on the server side
+5. Store valid submissions in the Supabase 'registrations' table
+6. Implement error handling and success feedback
+7. Add appropriate loading states during submission
+
+# Test Strategy:
+Test the full submission flow with valid and invalid data. Verify data is correctly stored in Supabase. Test error handling by simulating network failures and validation errors.

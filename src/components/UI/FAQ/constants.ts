@@ -19,23 +19,23 @@ export const animate = {
 
 export const faqData: FAQItem[] = [
   {
-    question: 'How do I create an account with RAFT?',
+    question: 'What is Catalyst and who can join?',
     answer:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      'Catalyst is the default community for the top 1% of ambitious high school and college students across the globe. We welcome driven students who are passionate about building startups, creating innovative solutions, and making a meaningful impact in the world.',
   },
   {
-    question: 'How does RAFT ensure the security of my financial data?',
+    question: 'How do I apply to join the Catalyst community?',
     answer:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      'Simply fill out our signup form with your information including your school, year of study, and area of interest. Our team reviews applications to ensure we maintain a community of the most motivated and talented students.',
   },
   {
-    question: 'What types of transactions can I perform with RAFT?',
+    question: 'What resources and tools does Catalyst provide to members?',
     answer:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      'Catalyst provides essential tools for startup formation including mentorship programs, networking opportunities with successful entrepreneurs, access to funding resources, technical workshops, and a supportive community of like-minded ambitious students.',
   },
   {
-    question: 'What benefits does RAFT offer for wealth management?',
+    question: 'Is there a cost to join Catalyst?',
     answer:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      'Catalyst is currently free to join for qualified students. We believe in removing barriers for ambitious young people who want to build something meaningful and create positive change in the world.',
   },
 ];

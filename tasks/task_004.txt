@@ -1,0 +1,16 @@
+# Task ID: 4
+# Title: Transform Features Section
+# Status: done
+# Dependencies: 1
+# Priority: medium
+# Description: Update the OffersSection to display startup club tools instead of banking features.
+# Details:
+1. Locate src/components/UI/OffersSection/constants.ts
+2. Update header phrases and paragraph content to focus on startup club benefits
+3. Replace all 4 offer cards with startup/education focused content
+4. Replace banking imagery with startup/education focused assets
+5. Maintain the existing card layout and animations
+6. Ensure responsive behavior is preserved
+
+# Test Strategy:
+Verify all content in the features section is updated and displays correctly. Test animations and hover effects on the cards. Check responsive layout on multiple screen sizes.

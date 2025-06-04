@@ -1,10 +1,10 @@
-import Layout from '@/components/Layout';
-import './globals.css';
-import type { Metadata } from 'next';
+import Layout from "@/components/Layout";
+import "./globals.css";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Raft',
-  description: 'Building the future of banking',
+  title: "Catalyst",
+  description: "Join the Bold. Build What's Next.",
 };
 
 export default function RootLayout({

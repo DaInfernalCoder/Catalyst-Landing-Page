@@ -1,0 +1,32 @@
+# Task ID: 7
+# Title: Implement Signup Form Component
+# Status: done
+# Dependencies: 5, 6
+# Priority: high
+# Description: Replace the JoinSection testimonial carousel with a signup form for student registration.
+# Details:
+1. Transform src/components/UI/JoinSection/ from testimonial carousel to signup form
+2. Create form fields for: name, email, school/university, year of study, and area of interest
+3. Implement form validation using client-side validation with smooth error state animations
+4. Style the form using Styled Components to match the site's design system:
+   - Maintain emerald background (#48d64c)
+   - Use SF Pro Display font family with consistent sizing
+   - Follow layout patterns (90% width, max-width 1440px, centered)
+   - Implement responsive design (mobile-first with 768px breakpoint)
+5. Implement Framer Motion animations following existing patterns:
+   - Use MaskText for header text reveal animations
+   - Apply useInView hook for viewport-triggered animations
+   - Implement staggered input field animations (0.1s delays)
+   - Add RevealCover-style animations for form container
+   - Create AnimatedLink-style hover effects for submit button
+6. Ensure the form is fully responsive following existing mobile/desktop patterns
+7. Implement loading states (1-1.4s durations), success state animations, and error handling with consistent easing patterns
+
+# Test Strategy:
+1. Test form validation with various inputs including edge cases
+2. Verify responsive behavior across different screen sizes (especially at 768px breakpoint)
+3. Check that animations work correctly during form submission, success states, and error states
+4. Verify animation timing and easing matches existing patterns
+5. Test accessibility of form elements and animations
+6. Ensure visual consistency with the existing design system
+7. Test form submission flow with mock API responses

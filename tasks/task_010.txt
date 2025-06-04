@@ -1,0 +1,15 @@
+# Task ID: 10
+# Title: Update FAQ Section Content
+# Status: done
+# Dependencies: 1
+# Priority: medium
+# Description: Replace banking-related FAQs with startup club formation questions and answers.
+# Details:
+1. Locate the FAQ section component and its constants file
+2. Replace existing banking questions with startup club formation FAQs
+3. Update answers to reflect Catalyst's mission and process
+4. Ensure the accordion functionality continues to work properly
+5. Maintain existing animations and responsive behavior
+
+# Test Strategy:
+Verify all FAQ content is updated and displays correctly. Test accordion functionality to ensure it opens and closes properly. Check responsive behavior on different screen sizes.

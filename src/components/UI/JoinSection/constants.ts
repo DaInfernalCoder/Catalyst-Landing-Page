@@ -1,45 +1,122 @@
-import { StaticImageData } from 'next/image';
-import robert_fox from '../../../../public/images/robert_fox.png';
-import cameron_williamson from '../../../../public/images/cameron_williamson.png';
-import esther_howard from '../../../../public/images/esther_howard.png';
+export interface FormData {
+  name: string;
+  email: string;
+  school: string;
+  yearOfStudy: string;
+  areaOfInterest: string;
+  message: string;
+}
 
-export type Props = {
-  testimony: string;
-  person: string;
-  avatar: StaticImageData;
-};
+export interface FormErrors {
+  name?: string;
+  email?: string;
+  school?: string;
+  yearOfStudy?: string;
+  areaOfInterest?: string;
+  message?: string;
+  general?: string;
+}
 
-export const testimonials = [
+export const desktopHeaderPhrase = ["Join the Bold. Build What's Next."];
+
+export const formFields = [
   {
-    testimony:
-      "RAFT has transformed my approach to finance. Their smart investing options have helped me grow my wealth, and their user-friendly platform makes managing my money a breeze. I've never felt more confident about my financial future.",
-    person: 'Robert Fox',
-    avatar: robert_fox,
+    name: 'name' as keyof FormData,
+    label: 'Full Name',
+    type: 'text',
+    placeholder: 'Enter your full name',
+    required: true,
   },
   {
-    testimony:
-      "I can't express how grateful I am to RAFT. Their wealth management services have been a game-changer for my family's financial security. The expert guidance and personalized strategies have given us peace of mind, knowing that our future is in capable hands.",
-    person: 'Cameron Williamson',
-    avatar: cameron_williamson,
+    name: 'email' as keyof FormData,
+    label: 'Email Address',
+    type: 'email',
+    placeholder: 'Enter your email address',
+    required: true,
   },
   {
-    testimony:
-      "RAFT's financial planning services have been a lifeline for me. I always struggled with managing my money, but their team crafted a tailored plan that addressed my goals and concerns. It's been a game-changer in achieving my financial dreams",
-    person: 'Esther Howard',
-    avatar: esther_howard,
+    name: 'school' as keyof FormData,
+    label: 'School/University',
+    type: 'text',
+    placeholder: 'Enter your school or university',
+    required: true,
   },
   {
-    testimony:
-      "I can't express how grateful I am to RAFT. Their wealth management services have been a game-changer for my family's financial security. The expert guidance and personalized strategies have given us peace of mind, knowing that our future is in capable hands.",
-    person: 'Cameron Williamson',
-    avatar: cameron_williamson,
+    name: 'yearOfStudy' as keyof FormData,
+    label: 'Year of Study',
+    type: 'select',
+    placeholder: 'Select your year of study',
+    required: false,
+    options: [
+      'High School Freshman',
+      'High School Sophomore', 
+      'High School Junior',
+      'High School Senior',
+      'College Freshman',
+      'College Sophomore',
+      'College Junior',
+      'College Senior',
+      'Graduate Student',
+      'Other'
+    ],
   },
   {
-    testimony:
-      "RAFT has transformed my approach to finance. Their smart investing options have helped me grow my wealth, and their user-friendly platform makes managing my money a breeze. I've never felt more confident about my financial future.",
-    person: 'Robert Fox',
-    avatar: robert_fox,
+    name: 'areaOfInterest' as keyof FormData,
+    label: 'Area of Interest',
+    type: 'select',
+    placeholder: 'Select your area of interest',
+    required: false,
+    options: [
+      'Technology & Software',
+      'Business & Entrepreneurship',
+      'Engineering',
+      'Design & Creative',
+      'Finance & Economics',
+      'Healthcare & Life Sciences',
+      'Education',
+      'Social Impact',
+      'Other'
+    ],
+  },
+  {
+    name: 'message' as keyof FormData,
+    label: 'Tell us about yourself (Optional)',
+    type: 'textarea',
+    placeholder: 'Share your goals, interests, or what you hope to achieve with Catalyst...',
+    required: false,
   },
 ];
 
-export const desktopHeaderPhrase = ['Join over 3 million', 'members'];
+export const initialFormData: FormData = {
+  name: '',
+  email: '',
+  school: '',
+  yearOfStudy: '',
+  areaOfInterest: '',
+  message: '',
+};
+
+export const validateEmail = (email: string): boolean => {
+  const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+  return emailRegex.test(email);
+};
+
+export const validateForm = (data: FormData): FormErrors => {
+  const errors: FormErrors = {};
+
+  if (!data.name.trim()) {
+    errors.name = 'Name is required';
+  }
+
+  if (!data.email.trim()) {
+    errors.email = 'Email is required';
+  } else if (!validateEmail(data.email)) {
+    errors.email = 'Please enter a valid email address';
+  }
+
+  if (!data.school.trim()) {
+    errors.school = 'School/University is required';
+  }
+
+  return errors;
+};
