@@ -1,24 +1,24 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 import catalyst_footer_logo from "../../../../public/svgs/catalyst_footer_logo.svg";
-import qr_code from "../../../../public/svgs/qr_code.svg";
-import ic_google_playstore from "../../../../public/svgs/ic_google_playstore.svg";
-import ic_baseline_apple from "../../../../public/svgs/ic_baseline_apple.svg";
 import ic_chevron_down from "../../../../public/svgs/ic_chevron_down.svg";
 import ic_copyright from "../../../../public/svgs/ic_copyright.svg";
 
 const linksArr = [
   {
     title: "Get Started",
-    links: ["Start a Chapter", "Join a Club", "Apply to Catalyst"],
+    links: [{ text: "Start a Chapter", action: "waitlist" }],
   },
-  {
-    title: "Resources",
-    links: ["Club Charter", "Curriculum", "Speaker Network"],
-  },
-  {
-    title: "Support",
-    links: ["Contact Catalyst", "FAQ", "Club Coordinator"],
-  },
+];
+
+const languages = [
+  "English (United States)",
+  "Spanish (España)",
+  "French (France)",
+  "German (Deutschland)",
+  "Portuguese (Brasil)",
 ];
 
 import {
@@ -27,19 +27,45 @@ import {
   FooterLogo,
   FooterMainContent,
   FooterMiddle,
-  QRContainer,
-  QRImageCtn,
-  TextCtn,
-  IconCtn,
   FooterNavigation,
   GridColumn,
   LinksContainer,
   FooterBottom,
   Translator,
   CopyRight,
+  LanguageDropdown,
+  LanguageOption,
 } from "./styles";
 
 const Footer = () => {
+  const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const headerOffset = 100;
+      const elementPosition = element.offsetTop;
+      const offsetPosition = elementPosition - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const handleLinkClick = (action: string) => {
+    if (action === "waitlist") {
+      scrollToSection("join");
+    }
+  };
+
+  const handleLanguageSelect = (language: string) => {
+    setSelectedLanguage(language);
+    setIsDropdownOpen(false);
+  };
+
   return (
     <Wrapper>
       <Inner>
@@ -48,28 +74,19 @@ const Footer = () => {
         </FooterLogo>
         <FooterMainContent>
           <FooterMiddle>
-            <QRContainer>
-              <QRImageCtn>
-                <Image src={qr_code} alt="qr_code" />
-              </QRImageCtn>
-              <TextCtn>
-                <p>
-                  Scan to start an Catalyst Entrepreneurship Club at your
-                  school.
-                </p>
-                <IconCtn>
-                  <Image src={ic_google_playstore} alt="playstore icon" />
-                  <Image src={ic_baseline_apple} alt="apple icon" />
-                </IconCtn>
-              </TextCtn>
-            </QRContainer>
             <FooterNavigation>
-              {linksArr.map((l, i) => (
+              {linksArr.map((section, i) => (
                 <GridColumn key={i}>
-                  <h3>{l.title}</h3>
+                  <h3>{section.title}</h3>
                   <LinksContainer>
-                    {l.links.map((link, i) => (
-                      <li key={i}>{link}</li>
+                    {section.links.map((link, j) => (
+                      <li
+                        key={j}
+                        onClick={() => handleLinkClick(link.action)}
+                        style={{ cursor: "pointer" }}
+                      >
+                        {link.text}
+                      </li>
                     ))}
                   </LinksContainer>
                 </GridColumn>
@@ -77,9 +94,32 @@ const Footer = () => {
             </FooterNavigation>
           </FooterMiddle>
           <FooterBottom>
-            <Translator>
-              <h3>English (United States)</h3>
-              <Image src={ic_chevron_down} alt="chevron down" />
+            <Translator onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+              <h3>{selectedLanguage}</h3>
+              <Image
+                src={ic_chevron_down}
+                alt="chevron down"
+                style={{
+                  transform: isDropdownOpen ? "rotate(180deg)" : "rotate(0deg)",
+                  transition: "transform 0.3s ease",
+                }}
+              />
+              {isDropdownOpen && (
+                <LanguageDropdown>
+                  {languages.map((language, i) => (
+                    <LanguageOption
+                      key={i}
+                      onClick={(e: React.MouseEvent) => {
+                        e.stopPropagation();
+                        handleLanguageSelect(language);
+                      }}
+                      $isSelected={language === selectedLanguage}
+                    >
+                      {language}
+                    </LanguageOption>
+                  ))}
+                </LanguageDropdown>
+              )}
             </Translator>
             <CopyRight>
               <Image src={ic_copyright} alt="copyright svg" />

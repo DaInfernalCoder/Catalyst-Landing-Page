@@ -137,6 +137,16 @@
       "status": "done",
       "dependencies": [],
       "priority": "high"
+    },
+    {
+      "id": 14,
+      "title": "Redesign and Implement Functional Footer for Catalyst Entrepreneurship Club",
+      "description": "Update the website footer to be more relevant for Catalyst Entrepreneurship Club by removing unnecessary sections, implementing a functional language selector, and ensuring responsive design.",
+      "details": "This task involves a comprehensive update to the footer component:\n\n1. Remove the QR code section entirely from the footer component\n2. Implement a functional language selector with proper dropdown menu:\n   - Use appropriate dropdown component that works on all devices\n   - Ensure language selection persists across page navigation\n   - Include at least English and any other relevant languages\n3. Restructure the footer links:\n   - Keep only the 'Get Started' section\n   - Update the 'Start a Chapter' link to direct to the waitlist page\n   - Remove the 'Resources' and 'Support' sections completely\n4. Rebalance the footer layout after removing sections:\n   - Adjust spacing and alignment for visual balance\n   - Ensure the footer maintains proper width constraints\n   - Consider using flexbox or grid for responsive layout\n5. Ensure the footer is fully responsive:\n   - Test on mobile, tablet, and desktop viewports\n   - Implement appropriate breakpoints for different screen sizes\n   - Verify text remains readable and links are easily clickable on all devices\n\nUse the existing design system for styling to maintain consistency with the rest of the site.",
+      "testStrategy": "Testing should verify both functionality and appearance:\n\n1. Visual inspection:\n   - Verify QR code section is completely removed\n   - Confirm footer layout is balanced and visually appealing\n   - Check that only the 'Get Started' section remains with appropriate links\n\n2. Functional testing:\n   - Test language selector dropdown on desktop and mobile devices\n   - Verify language selection works and persists across page navigation\n   - Confirm 'Start a Chapter' link correctly directs to the waitlist page\n\n3. Responsive testing:\n   - Test on multiple devices (mobile, tablet, desktop) and browsers\n   - Verify at standard breakpoints (320px, 768px, 1024px, 1440px)\n   - Ensure no horizontal scrolling occurs at any viewport width\n   - Check that touch targets are appropriately sized on mobile (at least 44x44px)\n\n4. Accessibility testing:\n   - Verify footer is navigable via keyboard\n   - Test with screen readers to ensure all elements are properly announced\n   - Check color contrast meets WCAG AA standards\n   - Verify language selector is accessible via keyboard and screen readers",
+      "status": "done",
+      "dependencies": [],
+      "priority": "medium"
     }
   ],
   "metadata": {

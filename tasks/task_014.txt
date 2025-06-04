@@ -1,0 +1,53 @@
+# Task ID: 14
+# Title: Redesign and Implement Functional Footer for Catalyst Entrepreneurship Club
+# Status: done
+# Dependencies: None
+# Priority: medium
+# Description: Update the website footer to be more relevant for Catalyst Entrepreneurship Club by removing unnecessary sections, implementing a functional language selector, and ensuring responsive design.
+# Details:
+This task involves a comprehensive update to the footer component:
+
+1. Remove the QR code section entirely from the footer component
+2. Implement a functional language selector with proper dropdown menu:
+   - Use appropriate dropdown component that works on all devices
+   - Ensure language selection persists across page navigation
+   - Include at least English and any other relevant languages
+3. Restructure the footer links:
+   - Keep only the 'Get Started' section
+   - Update the 'Start a Chapter' link to direct to the waitlist page
+   - Remove the 'Resources' and 'Support' sections completely
+4. Rebalance the footer layout after removing sections:
+   - Adjust spacing and alignment for visual balance
+   - Ensure the footer maintains proper width constraints
+   - Consider using flexbox or grid for responsive layout
+5. Ensure the footer is fully responsive:
+   - Test on mobile, tablet, and desktop viewports
+   - Implement appropriate breakpoints for different screen sizes
+   - Verify text remains readable and links are easily clickable on all devices
+
+Use the existing design system for styling to maintain consistency with the rest of the site.
+
+# Test Strategy:
+Testing should verify both functionality and appearance:
+
+1. Visual inspection:
+   - Verify QR code section is completely removed
+   - Confirm footer layout is balanced and visually appealing
+   - Check that only the 'Get Started' section remains with appropriate links
+
+2. Functional testing:
+   - Test language selector dropdown on desktop and mobile devices
+   - Verify language selection works and persists across page navigation
+   - Confirm 'Start a Chapter' link correctly directs to the waitlist page
+
+3. Responsive testing:
+   - Test on multiple devices (mobile, tablet, desktop) and browsers
+   - Verify at standard breakpoints (320px, 768px, 1024px, 1440px)
+   - Ensure no horizontal scrolling occurs at any viewport width
+   - Check that touch targets are appropriately sized on mobile (at least 44x44px)
+
+4. Accessibility testing:
+   - Verify footer is navigable via keyboard
+   - Test with screen readers to ensure all elements are properly announced
+   - Check color contrast meets WCAG AA standards
+   - Verify language selector is accessible via keyboard and screen readers

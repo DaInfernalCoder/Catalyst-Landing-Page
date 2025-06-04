@@ -31,7 +31,7 @@ export const faqData: FAQItem[] = [
   {
     question: 'What will I learn in the yearlong program?',
     answer:
-      'Follow our &quot;Build Your First Startup&quot; curriculum: Semester 1 focuses on discovering problems and defining solutions, while Semester 2 covers building MVPs, getting feedback, and pitching at Demo Day. You&apos;ll graduate with a real startup project.',
+      'Follow our "Build Your First Startup" curriculum: Semester 1 focuses on discovering problems and defining solutions, while Semester 2 covers building MVPs, getting feedback, and pitching at Demo Day. You\'ll graduate with a real startup project.',
   },
   {
     question: 'Do I need prior business experience to join or start a club?',
