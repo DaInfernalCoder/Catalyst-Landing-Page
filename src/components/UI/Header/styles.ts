@@ -24,35 +24,11 @@ export const LogoContainer = styled.div`
   @media (max-width: 768px) {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
   }
 `;
 
 export const BurgerMenu = styled.div`
   display: none;
-  position: relative;
-
-  @media (max-width: 768px) {
-    display: block;
-    padding: 0.5rem;
-
-    div {
-      position: absolute;
-      background: var(--emerald);
-      width: '250px';
-      height: '300px';
-      border-radius: 25px;
-      z-index: 1;
-      top: 50px;
-    }
-
-    img {
-      position: relative;
-      z-index: 2;
-      object-fit: cover;
-    }
-  }
 `;
 
 export const Nav = styled.div`
@@ -71,23 +47,16 @@ export const Nav = styled.div`
   }
 
   @media (max-width: 768px) {
-    position: absolute;
-    top: 60px;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: flex-start;
-    right: 120px;
-    left: auto;
+    position: static;
     transform: none;
-    z-index: 3;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition-delay: 0.5s;
+    gap: 1.5rem;
+    margin-left: auto;
 
-    &.active {
-      opacity: 1;
-      visibility: visible;
+    a {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--link-color);
+      text-decoration: none;
     }
   }
 `;
@@ -114,18 +83,12 @@ export const CallToActions = styled.div`
   }
 
   @media (max-width: 768px) {
-    position: absolute;
-    top: 220px;
-    z-index: 3;
-    right: 50px;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition-delay: 0.5s;
-
-    &.active {
-      opacity: 1;
-      visibility: visible;
+    div {
+      span {
+        color: var(--white);
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
     }
   }
 `;

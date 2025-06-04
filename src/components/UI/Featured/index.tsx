@@ -45,7 +45,7 @@ const Featured = () => {
             )}
           </Div>
         </ImageContainer>
-        <h2>Student Founders From Top Universities</h2>
+        <h2>Student Alumni From Top Universities</h2>
         <ParallaxImages>
           <ParallaxText baseVelocity={-4}>
             <Image

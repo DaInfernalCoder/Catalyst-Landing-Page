@@ -4,6 +4,10 @@ import hero_background from '../../../../public/images/grid_background.png';
 
 export const Wrapper = styled.section`
   margin-top: 6.25rem;
+
+  @media (max-width: 768px) {
+    margin-top: 4rem;
+  }
 `;
 
 export const Inner = styled.div`
@@ -16,6 +20,13 @@ export const Inner = styled.div`
   text-align: center;
   background-position: top center;
   background-size: contain;
+  padding: 0 1rem;
+
+  @media (max-width: 768px) {
+    padding: 0 1.5rem;
+    background-size: cover;
+    background-position: center;
+  }
 `;
 
 export const Pill = styled.div`
@@ -59,14 +70,29 @@ export const HeroTextContainer = styled.div`
   @media (max-width: 768px) {
     gap: 1rem;
     padding-bottom: 1.5rem;
+    
     h1 {
       font-size: 2.5rem;
       font-weight: 400;
+      line-height: 1.1;
+    }
+
+    p {
+      font-size: 1.125rem;
+      line-height: 1.6;
+      padding: 0 0.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+      line-height: 1.1;
     }
 
     p {
       font-size: 1rem;
-      line-height: 1.5rem;
+      line-height: 1.5;
     }
   }
 `;

@@ -81,6 +81,8 @@ export const Edges = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  justify-content: center;
+  align-items: start;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;

@@ -43,11 +43,12 @@ const Header = () => {
       <Inner>
         <LogoContainer>
           <Image src={catalyst_logo} alt="catalyst_logo" priority />
-          <BurgerMenu onClick={() => setIsOpen(!isOpen)}>
+          <BurgerMenu onClick={() => setIsOpen(!isOpen)} className={isOpen ? "active" : ""}>
             <motion.div
               variants={menu}
               animate={isOpen ? "open" : "closed"}
               initial="closed"
+              className={isOpen ? "active" : ""}
             ></motion.div>
             <Image src={ic_bars} alt="bars" />
           </BurgerMenu>

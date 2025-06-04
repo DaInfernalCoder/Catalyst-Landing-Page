@@ -18,7 +18,7 @@ export const cardsInfo = [
 export const stats = [
   {
     number: '5+',
-    subtitle: 'schools',
+    subtitle: 'Schools',
   },
   {
     number: '50+',

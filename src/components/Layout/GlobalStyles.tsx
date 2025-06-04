@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const styled = { createGlobalStyle };
 
@@ -23,7 +23,7 @@ export const GlobalStyles = styled.createGlobalStyle`
   body {
     max-width: 100vw;
     overflow-x: hidden;
-    font-family: 'SF Pro Display', sans-serif;
+    font-family: "SF Pro Display", sans-serif;
     background-color: var(--Background);
     color: var(--white);
     scroll-snap-type: y mandatory;
@@ -65,12 +65,5 @@ export const GlobalStyles = styled.createGlobalStyle`
   .scroller span {
     display: block;
     margin-right: 5rem;
-  }
-
-  .not_complete {
-    display: none;
-  }
-
-  .complete {
   }
 `;
