@@ -19,23 +19,23 @@ export const animate = {
 
 export const faqData: FAQItem[] = [
   {
-    question: 'What is Catalyst and who can join?',
+    question: 'How do I start an Catalyst Entrepreneurship Club at my school?',
     answer:
-      'Catalyst is the default community for the top 1% of ambitious high school and college students across the globe. We welcome driven students who are passionate about building startups, creating innovative solutions, and making a meaningful impact in the world.',
+      'Fill out the chapter interest form at useCatalyst.ai/clubs. Once approved, you&apos;ll receive a starter kit with club charter, syllabus, and templates, plus an onboarding call with an Catalyst Club Coordinator to help you launch successfully.',
   },
   {
-    question: 'How do I apply to join the Catalyst community?',
+    question: 'What happens during monthly club meetings?',
     answer:
-      'Simply fill out our signup form with your information including your school, year of study, and area of interest. Our team reviews applications to ensure we maintain a community of the most motivated and talented students.',
+      'Each month features a guest speaker arranged by Catalyst—real founders, VCs, or startup operators including Y Combinator alumni. You&apos;ll also work on hands-on activities like problem discovery, business model development, and pitch practice.',
   },
   {
-    question: 'What resources and tools does Catalyst provide to members?',
+    question: 'What will I learn in the yearlong program?',
     answer:
-      'Catalyst provides essential tools for startup formation including mentorship programs, networking opportunities with successful entrepreneurs, access to funding resources, technical workshops, and a supportive community of like-minded ambitious students.',
+      'Follow our &quot;Build Your First Startup&quot; curriculum: Semester 1 focuses on discovering problems and defining solutions, while Semester 2 covers building MVPs, getting feedback, and pitching at Demo Day. You&apos;ll graduate with a real startup project.',
   },
   {
-    question: 'Is there a cost to join Catalyst?',
+    question: 'Do I need prior business experience to join or start a club?',
     answer:
-      'Catalyst is currently free to join for qualified students. We believe in removing barriers for ambitious young people who want to build something meaningful and create positive change in the world.',
+      'No experience required! Catalyst Entrepreneurship Club is designed for curious students who want to learn. Whether you&apos;re interested in tech, solving problems, or just exploring business, our program guides you from beginner to founder.',
   },
 ];

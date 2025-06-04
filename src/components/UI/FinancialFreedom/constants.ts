@@ -1,56 +1,55 @@
-
 import ic_banknotes from '../../../../public/svgs/ic_banknotes.svg';
 import ic_circle_stack from '../../../../public/svgs/ic_circle_stack.svg';
 import ic_arrows_left_right from '../../../../public/svgs/ic_arrows_right_left.svg';
 
 // For desktop
-export const desktopHeaderPhrase = ['Your Financial Freedom,', 'Your Way'];
+export const desktopHeaderPhrase = ['Your Entrepreneurship Journey,', 'Your Way'];
 export const desktopParagraphPhrase = [
-  'We believe that managing your finances should be effortless and cost-effective.',
-  "That's why we offer you the freedom you deserve.",
+  'We believe that building your first startup should be accessible and supported.',
+  "That's why we provide the guidance and community you deserve.",
 ];
 export const desktopBriefNotePhrase = [
-  'Smart investments,',
-  'secure payments, and',
-  'expert guidance, all in',
-  'one place.',
+  'Expert mentorship,',
+  'real connections, and',
+  'hands-on experience, all in',
+  'one program.',
 ];
 
 // For mobile
-export const mobileHeaderPhrase = ['Your Financial', 'Freedom, Your Way'];
+export const mobileHeaderPhrase = ['Your Entrepreneurship', 'Journey, Your Way'];
 export const mobileParagraphPhrase = [
-  'We believe that managing your finances should be',
-  "effortless and cost-effective. That's why we offer",
-  ' you the freedom you deserve.',
+  'We believe that building your first startup should be',
+  "accessible and supported. That's why we provide",
+  ' the guidance and community you deserve.',
 ];
 
 export const mobileBriefNotePhrase = [
-  'Smart',
-  ' investments,',
-  'secure',
-  ' payments,',
-  'and expert',
-  'guidance, all',
-  'in one place.',
+  'Expert',
+  ' mentorship,',
+  'real',
+  ' connections,',
+  'and hands-on',
+  'experience, all',
+  'in one program.',
 ];
 
 export const edges = [
   {
-    point: 'No minimum balance fees',
+    point: 'No experience required',
     details:
-      'Say goodbye to minimum balance fees. Your account, your balance—no hidden charges',
+      'Start your entrepreneurship journey regardless of background. Our program welcomes curious students ready to learn.',
     icon: ic_banknotes,
   },
   {
-    point: 'No monthly fees',
+    point: 'No membership fees',
     details:
-      'Bank with us without worrying about monthly fees. Keep more of your money where it belongs—in your account',
+      'Join Ultra Entrepreneurship Club without financial barriers. Access world-class mentorship and resources at no cost.',
     icon: ic_circle_stack,
   },
   {
-    point: 'No bank transfer fees',
+    point: 'No geographic limits',
     details:
-      'Seamlessly transfer funds without the extra cost. Send and receive money with zero bank transfer fees.',
+      'Connect with founders and mentors globally. Build your network beyond your school through our international community.',
     icon: ic_arrows_left_right,
   },
 ];

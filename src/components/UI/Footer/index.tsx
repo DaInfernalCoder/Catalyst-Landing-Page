@@ -8,16 +8,16 @@ import ic_copyright from "../../../../public/svgs/ic_copyright.svg";
 
 const linksArr = [
   {
-    title: "Community",
-    links: ["About Catalyst", "Join Us", "Success Stories"],
+    title: "Get Started",
+    links: ["Start a Chapter", "Join a Club", "Apply to Catalyst"],
   },
   {
     title: "Resources",
-    links: ["Startup Tools", "Mentorship", "Workshops"],
+    links: ["Club Charter", "Curriculum", "Speaker Network"],
   },
   {
     title: "Support",
-    links: ["Contact Us", "FAQ", "Help Center"],
+    links: ["Contact Catalyst", "FAQ", "Club Coordinator"],
   },
 ];
 
@@ -54,7 +54,8 @@ const Footer = () => {
               </QRImageCtn>
               <TextCtn>
                 <p>
-                  Scan to join our community and start building your startup.
+                  Scan to start an Catalyst Entrepreneurship Club at your
+                  school.
                 </p>
                 <IconCtn>
                   <Image src={ic_google_playstore} alt="playstore icon" />
@@ -82,7 +83,7 @@ const Footer = () => {
             </Translator>
             <CopyRight>
               <Image src={ic_copyright} alt="copyright svg" />
-              Catalyst Community, LLC.
+              Catalyst Entrepreneurship Club
             </CopyRight>
           </FooterBottom>
         </FooterMainContent>

@@ -3,39 +3,39 @@ import ic_identification from '../../../../public/svgs/ic_identification.svg';
 import ic_lock_closed from '../../../../public/svgs/ic_lock_closed.svg';
 
 // For desktop
-export const desktopHeaderPhrase = ["Introducing Catalyst's", 'Startup Toolkit'];
+export const desktopHeaderPhrase = ["Catalyst Entrepreneurship", 'Club Program'];
 export const desktopParagraphPhrase = [
-  " Discover Catalyst's comprehensive toolkit designed for ambitious students.",
-  'Access mentorship, resources, and community support to transform your',
-  'ideas into successful startups.',
+  " Join the Catalyst Entrepreneurship Club and follow our proven yearlong curriculum.",
+  'From problem discovery to Demo Day, we guide you through building',
+  'your first startup with real founder mentorship.',
 ];
 
 // For mobile
-export const mobileHeaderPhrase = ["Introducing Catalyst's", 'Startup Toolkit'];
+export const mobileHeaderPhrase = ["Catalyst Entrepreneurship", 'Club Program'];
 export const mobileParagraphPhrase = [
-  " Discover Catalyst's comprehensive toolkit designed",
-  ' for ambitious students. Access mentorship, resources,',
-  'and community support to transform your',
-  'ideas into successful startups.',
+  " Join the Catalyst Entrepreneurship Club and follow our",
+  ' proven yearlong curriculum. From problem discovery',
+  'to Demo Day, we guide you through building',
+  'your first startup with real founder mentorship.',
 ];
 
 export const edges = [
   {
-    point: 'Mentorship Network',
+    point: 'Monthly Expert Speakers',
     details:
-      'Connect with successful entrepreneurs and industry experts who provide guidance, feedback, and support for your startup journey.',
+      'Learn from real founders, VCs, and startup operators including Y Combinator alumni who share practical insights and industry knowledge.',
     icon: ic_document_duplicate,
   },
   {
-    point: 'Resource Library',
+    point: 'Hands-On Curriculum',
     details:
-      'Access comprehensive startup resources including business plan templates, funding guides, and technical workshops tailored for student entrepreneurs.',
+      'Follow our structured yearlong program: Discover & Define problems in Semester 1, then Build & Pitch your startup in Semester 2.',
     icon: ic_identification,
   },
   {
-    point: 'Community Support',
+    point: 'Demo Day & Recognition',
     details:
-      'Join a network of like-minded ambitious students who share ideas, collaborate on projects, and support each other&apos;s entrepreneurial goals.',
+      'Pitch your final project to judges including school staff, Catalyst reps, and mentors. Gain access to internships and funding opportunities.',
     icon: ic_lock_closed,
   },
 ];

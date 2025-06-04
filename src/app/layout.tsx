@@ -3,8 +3,9 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Catalyst",
-  description: "Join the Bold. Build What's Next.",
+  title: "Ultra Entrepreneurship Club - Build Your First Startup",
+  description:
+    "Join Ultra Entrepreneurship Club and build your first startup with expert mentorship, real founder connections, and hands-on curriculum.",
 };
 
 export default function RootLayout({

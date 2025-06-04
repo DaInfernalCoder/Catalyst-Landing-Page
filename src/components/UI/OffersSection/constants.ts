@@ -4,44 +4,44 @@ import wealth_management from '../../../../public/images/wealth_management.png';
 import financial_planning from '../../../../public/images/financial_planning.png';
 // For desktop
 export const desktopHeaderPhrases = [
-  'Tools to Build Your',
-  'Startup Dreams',
+  'Everything You Need to',
+  'Build Your Own Club That Has Real Impact',
 ];
 export const desktopParagraphPhrase = [
-  'Catalyst provides the essential tools and resources ambitious students need',
-  'to turn their ideas into successful startups. Join the community and start building.',
+  'Catalyst Entrepreneurship Club provides monthly expert speakers, startup guidance,',
+  'and real-world connections to help you launch your first club focused on entrepreneurship and tech.',
 ];
 
 // For mobile
 export const mobileParagraphPhrase = [
-  'Catalyst provides the essential tools and resources',
-  'ambitious students need to turn their ideas into',
-  'successful startups. Join the community and start building.',
+  'Catalyst Entrepreneurship Club provides monthly expert',
+  'speakers, startup guidance, and real-world connections',
+  'to help you launch your first company.',
 ];
 
 export const offers = [
   {
     illustration: seamless_payments,
-    title: 'Idea Validation',
+    title: 'Monthly Expert Speakers',
     details:
-      'Test and validate your startup ideas with our community of ambitious entrepreneurs and industry experts.',
+      'Learn from real founders, VCs, and startup operators including Y Combinator alumni who share their journey and insights.',
   },
   {
     illustration: smart_investing,
-    title: 'Mentorship Network',
+    title: 'Startup Project Guidance',
     details:
-      'Connect with successful entrepreneurs and industry leaders who provide guidance and support for your journey.',
+      'Follow our proven yearlong syllabus to build your first startup from problem discovery to Demo Day pitch.',
   },
   {
     illustration: wealth_management,
-    title: 'Resource Library',
+    title: 'Founder Network Access',
     details:
-      'Access curated resources, templates, and tools designed specifically for student entrepreneurs.',
+      'Connect directly with successful entrepreneurs, angel investors, and mentors through Ultra&apos;s exclusive network.',
   },
   {
     illustration: financial_planning,
-    title: 'Community Events',
+    title: 'Demo Day & Competitions',
     details:
-      'Join exclusive workshops, pitch competitions, and networking events to accelerate your startup growth.',
+      'Pitch your startup to judges, compete for recognition, and gain access to internships and funding opportunities.',
   },
 ];

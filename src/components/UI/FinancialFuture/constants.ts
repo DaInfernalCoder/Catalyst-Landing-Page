@@ -2,56 +2,56 @@ import ic_money_send from '../../../../public/svgs/ic_money_send.svg';
 import ic_wallet_minus from '../../../../public/svgs/ic_wallet_minus.svg';
 export const cardsInfo = [
   {
-    title: 'Spend Better',
+    title: 'Build Better',
     details:
-      'Set and achieve financial goals with ease, automate your savings, and watch your money grow without the stress.',
+      'Transform your ideas into viable startups with our proven curriculum, expert mentorship, and hands-on project guidance.',
     icon: ic_money_send,
   },
   {
-    title: 'Invest Better',
+    title: 'Connect Better',
     details:
-      'Set and achieve financial goals with ease, automate your savings, and watch your money grow without the stress.',
+      'Network with successful founders, VCs, and fellow student entrepreneurs who can accelerate your startup journey.',
     icon: ic_wallet_minus,
   },
 ];
 
 export const stats = [
   {
+    number: '100+',
+    subtitle: 'schools',
+  },
+  {
+    number: '500+',
+    subtitle: 'student founders',
+  },
+  {
     number: '50+',
-    subtitle: 'cities',
+    subtitle: 'expert speakers',
   },
   {
-    number: '50,000+',
-    subtitle: 'transactions',
-  },
-  {
-    number: '3M+',
-    subtitle: 'users',
-  },
-  {
-    number: '5+',
-    subtitle: 'user ratings',
+    number: '25+',
+    subtitle: 'startups launched',
   },
 ];
 
 // For desktop
 export const desktopHeaderPhrase = [
-  'Confidently Shape Your',
-  'Financial Future',
+  'Build Your Startup',
+  'With Confidence',
 ];
 export const desktopParagraphPhrase = [
-  'At Catalyst, we empower you to confidently shape your financial future. Our modern',
-  'approach simplifies saving and investing, making it easier than ever.',
+  'Catalyst Entrepreneurship Club gives you the tools, mentorship, and community to build',
+  'your first startup with confidence. Join thousands of student founders worldwide.',
 ];
 
 // For mobile
 export const mobileHeaderPhrase = [
-  'Confidently Shape',
-  ' Your Financial Future',
+  'Build Your Startup',
+  ' With Confidence',
 ];
 export const mobileParagraphPhrase = [
-  'At Catalyst, we empower you to confidently shape',
-  'your financial future. Our modern approach',
-  'simplifies saving and investing, making it easier',
-  'than ever.',
+  'Catalyst Entrepreneurship Club gives you the tools,',
+  'mentorship, and community to build your first',
+  'startup with confidence. Join thousands of',
+  'student founders worldwide.',
 ];

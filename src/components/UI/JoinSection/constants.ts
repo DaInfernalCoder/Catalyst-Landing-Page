@@ -17,7 +17,7 @@ export interface FormErrors {
   general?: string;
 }
 
-export const desktopHeaderPhrase = ["Join the Bold. Build What's Next."];
+export const desktopHeaderPhrase = ["Start Your Entrepreneurship Journey"];
 
 export const formFields = [
   {
@@ -82,7 +82,7 @@ export const formFields = [
     name: 'message' as keyof FormData,
     label: 'Tell us about yourself (Optional)',
     type: 'textarea',
-    placeholder: 'Share your goals, interests, or what you hope to achieve with Catalyst...',
+    placeholder: 'Share your entrepreneurial goals, startup ideas, or what you hope to achieve with Catalyst Entrepreneurship Club...',
     required: false,
   },
 ];

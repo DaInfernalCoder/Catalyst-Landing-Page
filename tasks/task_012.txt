@@ -1,0 +1,71 @@
+# Task ID: 12
+# Title: Rebrand Site Components for Catalyst Entrepreneurship Club (Catalyst)
+# Status: done
+# Dependencies: None
+# Priority: high
+# Description: Comprehensively update all website components to reflect Catalyst as the Catalyst Entrepreneurship Club for students, removing any references to banking/financial services and implementing entrepreneurship-focused content throughout the site.
+# Details:
+This task requires a complete transformation of the website to properly represent Catalyst as a tech entrepreneurship club for students:
+
+1. Content Updates:
+   - Replace all mission statements to focus on: student entrepreneurship, startup creation, founder/investor connections, and business mentorship
+   - Remove any banking/financial terminology and replace with entrepreneurship vocabulary
+   - Update hero section with "Build Your First Startup" messaging
+   - Transform features section to highlight club benefits:
+     * Monthly speaker meetings with industry leaders
+     * Startup project guidance and resources
+     * Networking opportunities with founders and VCs
+     * Demo Day participation for student projects
+     * Internship connections with startups
+   - Revise FAQ section with questions relevant to student entrepreneurship clubs
+   - Replace testimonials with student founder success stories
+   - Update all CTAs to focus on club chapter applications and student signups
+
+2. Program Structure:
+   - Incorporate content about the yearlong syllabus structure:
+     * First semester: Discover & Define phase
+     * Second semester: Build & Pitch phase
+   - Add information about Catalyst partnership benefits
+   - Include Y Combinator connections and mentorship opportunities
+
+3. Branding Elements:
+   - Update footer information with Catalyst Entrepreneurship Club details
+   - Revise contact information to align with club structure
+   - Ensure all visual elements match entrepreneurship club branding
+   - Review and update all meta descriptions and page titles
+
+4. Technical Considerations:
+   - Maintain responsive design across all updated components
+   - Ensure accessibility standards are maintained
+   - Update any relevant metadata or SEO elements
+   - Check for and fix any broken links resulting from content changes
+
+# Test Strategy:
+To verify successful implementation:
+
+1. Content Verification:
+   - Conduct a comprehensive text search for banking/financial terms to ensure complete removal
+   - Verify all sections (hero, features, FAQ, testimonials, CTAs) contain entrepreneurship-focused content
+   - Confirm the yearlong syllabus structure is clearly presented
+   - Check that Catalyst partnership and Y Combinator connections are properly highlighted
+
+2. Visual Testing:
+   - Test the site on multiple devices (desktop, tablet, mobile) to ensure responsive design
+   - Verify all images and graphics align with entrepreneurship themes
+   - Ensure consistent branding throughout the site
+
+3. Functional Testing:
+   - Test all CTAs and forms to confirm they direct to appropriate club application/signup endpoints
+   - Verify navigation elements correctly link to updated content sections
+   - Test any interactive elements to ensure they work with new content
+
+4. User Acceptance Testing:
+   - Have 3-5 students unfamiliar with the site review it and confirm they understand it's an entrepreneurship club
+   - Ask testers to identify the main purpose and benefits of the club based solely on site content
+   - Collect feedback on clarity of messaging and any remaining confusing elements
+
+5. SEO Verification:
+   - Check that meta descriptions, page titles, and alt text reflect entrepreneurship focus
+   - Verify schema markup is updated if applicable
+
+Pass criteria: Site contains zero banking references, clearly communicates Catalyst Entrepreneurship Club mission, presents all club benefits, and provides clear pathways for student engagement.
