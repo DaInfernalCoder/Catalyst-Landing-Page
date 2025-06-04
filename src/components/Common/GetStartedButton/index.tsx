@@ -1,16 +1,29 @@
-import Link from 'next/link';
-import { LinkTo } from './styles';
+import { StyledButton } from "./styles";
 
 const GetStartedButton = ({ padding }: { padding: string }) => {
+  const scrollToJoinSection = () => {
+    const element = document.getElementById("join");
+    if (element) {
+      const headerOffset = 100; // Offset to account for fixed header
+      const elementPosition = element.offsetTop;
+      const offsetPosition = elementPosition - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
-    <LinkTo
+    <StyledButton
       style={{
         padding: padding,
       }}
-      href="/"
+      onClick={scrollToJoinSection}
     >
       Get Started
-    </LinkTo>
+    </StyledButton>
   );
 };
 

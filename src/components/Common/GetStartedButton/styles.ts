@@ -1,8 +1,7 @@
 'use client';
-import Link from 'next/link';
 import { styled } from 'styled-components';
 
-export const LinkTo = styled(Link)`
+export const StyledButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,4 +10,16 @@ export const LinkTo = styled(Link)`
   color: var(--white);
   font-size: 1rem;
   font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: #2a7a2d;
+    transform: translateY(-2px);
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
 `;
