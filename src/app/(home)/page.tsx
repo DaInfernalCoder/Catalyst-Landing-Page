@@ -13,12 +13,18 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
-      <Featured />
-      <OffersSection />
+      <section id="about">
+        <Featured />
+        <OffersSection />
+      </section>
       <FinancialFreedom />
       <FinancialFuture />
-      <IntroSection />
-      <JoinSection />
+      <section id="program">
+        <IntroSection />
+      </section>
+      <section id="join">
+        <JoinSection />
+      </section>
       <FAQ />
     </main>
   );

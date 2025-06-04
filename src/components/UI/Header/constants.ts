@@ -20,17 +20,18 @@ export const menu = {
     },
   },
 };
+
 export const links = [
   {
-    url: '/',
-    linkTo: 'Learn',
-  },
-  {
-    url: '/',
     linkTo: 'About',
+    sectionId: 'about',
   },
   {
-    url: '/',
-    linkTo: 'Signup',
+    linkTo: 'Program',
+    sectionId: 'program',
+  },
+  {
+    linkTo: 'Join Us',
+    sectionId: 'join',
   },
 ];

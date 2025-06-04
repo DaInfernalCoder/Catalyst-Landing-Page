@@ -1,6 +1,6 @@
-'use client';
-import { useState } from 'react';
-import { Div, Word, Span, AbsoluteContainer } from './styles';
+"use client";
+import { useState } from "react";
+import { Div, Word, Span, AbsoluteContainer } from "./styles";
 
 type AnimationProps = {
   rest: {
@@ -38,7 +38,7 @@ const letterAnimation = {
     transition: {
       duration: 0.3,
       ease: [0.6, 0.01, 0.05, 0.95],
-      type: 'tween',
+      type: "tween",
     },
   },
 };
@@ -52,17 +52,25 @@ const letterAnimationTwo = {
     transition: {
       duration: 0.3,
       ease: [0.6, 0.01, 0.05, 0.95],
-      type: 'tween',
+      type: "tween",
     },
   },
 };
 
-const AnimatedLink = ({ title }: { title: string }) => {
+const AnimatedLink = ({
+  title,
+  onClick,
+}: {
+  title: string;
+  onClick?: () => void;
+}) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <Div
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={onClick}
+      style={{ cursor: onClick ? "pointer" : "default" }}
     >
       <AnimatedWord
         title={title}
@@ -94,10 +102,10 @@ const AnimatedWord = ({
   <Word
     variants={titleAnimation}
     initial="rest"
-    animate={isHovered ? 'hover' : 'rest'}
+    animate={isHovered ? "hover" : "rest"}
   >
-    {title.split('').map((char, i) =>
-      char === ' ' ? (
+    {title.split("").map((char, i) =>
+      char === " " ? (
         <Span key={i}>&nbsp;</Span>
       ) : (
         <Span variants={animations} key={i}>

@@ -1,6 +1,6 @@
 # Task ID: 13
 # Title: Update Navigation Bar for Catalyst Entrepreneurship Club Website
-# Status: in-progress
+# Status: done
 # Dependencies: None
 # Priority: high
 # Description: Redesign and implement a functional, responsive navigation bar that aligns with the Catalyst Entrepreneurship Club branding, replacing login/get started buttons with a 'Join Us' button linking to the waitlist/signup section.
