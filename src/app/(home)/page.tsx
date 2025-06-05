@@ -4,7 +4,6 @@ import {
   FinancialFuture,
   FinancialFreedom,
   HeroSection,
-  IntroSection,
   JoinSection,
   OffersSection,
 } from "@/components";
@@ -19,9 +18,6 @@ export default function Home() {
       </section>
       <FinancialFreedom />
       <FinancialFuture />
-      <section id="program">
-        <IntroSection />
-      </section>
       <section id="join">
         <JoinSection />
       </section>

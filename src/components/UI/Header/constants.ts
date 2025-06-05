@@ -26,8 +26,4 @@ export const links = [
     linkTo: 'About',
     sectionId: 'about',
   },
-  {
-    linkTo: 'Program',
-    sectionId: 'program',
-  },
 ];
