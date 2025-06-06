@@ -40,8 +40,8 @@ export const desktopHeaderPhrase = [
   'With Confidence',
 ];
 export const desktopParagraphPhrase = [
-  'Catalyst Entrepreneurship Club gives you the tools, mentorship, and community to build',
-  'your first club with confidence. Join thousands of student founders worldwide.',
+  'Catalyst Entrepreneurship Club gives you the tools, mentorship, and community',
+  'to build your first club with confidence. Join thousands of student founders worldwide.',
 ];
 
 // For mobile

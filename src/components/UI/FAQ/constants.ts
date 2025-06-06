@@ -24,7 +24,7 @@ export const faqData: FAQItem[] = [
   },
   {
     question: 'What happens during monthly club meetings?',
-    answer: 'Each month features an exclusive guest speaker arranged by Catalystreal founders, VCs, and successful entrepreneurs including Y Combinator alumni. You\'ll also participate in hands-on activities like problem discovery workshops, business model development sessions, and pitch practice with peer feedback.',
+    answer: 'Each month features an exclusive guest speaker arranged by Catalyst founders, VCs, and successful entrepreneurs including Y Combinator alumni. You\'ll also participate in hands-on activities like problem discovery workshops, business model development sessions, and pitch practice with peer feedback.',
   },
   {
     question: 'What will I learn in the yearlong program?',
