@@ -8,13 +8,15 @@ const StagewiseToolbar = () => {
     if (process.env.NODE_ENV === "development") {
       const initToolbar = async () => {
         try {
-          const { initToolbar } = await import("@stagewise/toolbar");
+          // Commented out to prevent build errors - stagewise/toolbar not installed
+          // const { initToolbar } = await import("@stagewise/toolbar");
 
-          const stagewiseConfig = {
-            plugins: [],
-          };
+          // const stagewiseConfig = {
+          //   plugins: [],
+          // };
 
-          initToolbar(stagewiseConfig);
+          // initToolbar(stagewiseConfig);
+          console.log("Stagewise toolbar disabled - package not installed");
         } catch (error) {
           console.warn("Failed to initialize stagewise toolbar:", error);
         }

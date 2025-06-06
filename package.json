@@ -12,13 +12,15 @@
     "@motionone/utils": "^10.16.3",
     "@studio-freight/react-lenis": "^0.0.36",
     "@supabase/supabase-js": "^2.49.9",
+    "bufferutil": "^4.0.8",
     "framer-motion": "^10.16.4",
     "gsap": "^3.12.2",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
     "resend": "^4.5.1",
-    "styled-components": "^6.1.0"
+    "styled-components": "^6.1.0",
+    "utf-8-validate": "^6.0.4"
   },
   "devDependencies": {
     "@types/node": "^20",

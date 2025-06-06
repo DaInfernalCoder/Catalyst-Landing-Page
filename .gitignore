@@ -37,6 +37,9 @@ next-env.d.ts
 # MCP configuration with API keys
 .mcp
 
+# Stagewise toolbar (development tool)
+src/components/StagewiseToolbar.tsx
+
 # Added by Claude Task Master
 # Logs
 logs
@@ -58,3 +61,4 @@ node_modules/
 # Task files
 tasks.json
 tasks/ 
+
