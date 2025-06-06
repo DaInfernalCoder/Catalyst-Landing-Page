@@ -196,9 +196,10 @@ export const Banner = styled.div`
   }
 
   @media (max-width: 768px) {
-    height: 20rem;
+    height: 25rem;
+    width: calc(100% - 4rem);
     border-radius: 1rem;
-    margin: 0 1rem;
+    margin: 0 auto;
     
     img {
       object-fit: cover;

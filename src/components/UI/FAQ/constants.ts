@@ -28,11 +28,11 @@ export const faqData: FAQItem[] = [
   },
   {
     question: 'What will I learn in the yearlong program?',
-    answer: 'Follow our comprehensive &quot;Build Your First Startup&quot; curriculum: Semester 1 focuses on discovering real problems and defining innovative solutions, while Semester 2 covers building MVPs, gathering user feedback, and perfecting your pitch for Demo Day. You&apos;ll graduate with a real startup project and valuable entrepreneurial skills.',
+    answer: 'Follow our comprehensive "Build Your First Startup" curriculum: Semester 1 focuses on discovering real problems and defining innovative solutions, while Semester 2 covers building MVPs, gathering user feedback, and perfecting your pitch for Demo Day. You\'ll graduate with a real startup project and valuable entrepreneurial skills.',
   },
   {
     question: 'Do I need prior business experience to join or start a club?',
-    answer: 'Absolutely not! Catalyst Entrepreneurship Club is specifically designed for curious students who want to learn entrepreneurship from the ground up. Whether you&apos;re interested in technology, solving real-world problems, or exploring business concepts, our program provides step-by-step guidance from complete beginner to confident founder.',
+    answer: 'Absolutely not! Catalyst Entrepreneurship Club is specifically designed for curious students who want to learn entrepreneurship from the ground up. Whether you\'re interested in technology, solving real-world problems, or exploring business concepts, our program provides step-by-step guidance from complete beginner to confident founder.',
   },
   {
     question: 'What support does Catalyst provide to club leaders?',

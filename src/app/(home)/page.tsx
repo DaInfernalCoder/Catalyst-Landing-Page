@@ -12,10 +12,8 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
-      <section id="about">
-        <Featured />
-        <OffersSection />
-      </section>
+      <Featured />
+      <OffersSection />
       <FinancialFreedom />
       <FinancialFuture />
       <section id="join">
