@@ -20,17 +20,17 @@ import {
 
 const OffersSection = () => {
   const isMobile = useIsMobile();
+
+  if (isMobile) {
+    return null;
+  }
+
   return (
     <Wrapper id="about">
       <Inner>
         <Header>
           <MaskText phrases={desktopHeaderPhrases} tag="h1" />
-
-          {isMobile ? (
-            <MaskText phrases={mobileParagraphPhrase} tag="p" />
-          ) : (
-            <MaskText phrases={desktopParagraphPhrase} tag="p" />
-          )}
+          <MaskText phrases={desktopParagraphPhrase} tag="p" />
         </Header>
         <Offers>
           {offers.slice(0, 2).map((offer, i) => (
@@ -45,21 +45,19 @@ const OffersSection = () => {
             </OfferCard>
           ))}
         </Offers>
-        {!isMobile && (
-          <Offers>
-            {offers.slice(2, 4).map((offer, i) => (
-              <OfferCard key={i}>
-                <ImageCtn>
-                  <Image src={offer.illustration} alt="illustration" />
-                </ImageCtn>
-                <TextCtn>
-                  <MaskText phrases={new Array(offer.title)} tag="h2" />
-                  <p>{offer.details}</p>
-                </TextCtn>
-              </OfferCard>
-            ))}
-          </Offers>
-        )}
+        <Offers>
+          {offers.slice(2, 4).map((offer, i) => (
+            <OfferCard key={i}>
+              <ImageCtn>
+                <Image src={offer.illustration} alt="illustration" />
+              </ImageCtn>
+              <TextCtn>
+                <MaskText phrases={new Array(offer.title)} tag="h2" />
+                <p>{offer.details}</p>
+              </TextCtn>
+            </OfferCard>
+          ))}
+        </Offers>
       </Inner>
     </Wrapper>
   );
