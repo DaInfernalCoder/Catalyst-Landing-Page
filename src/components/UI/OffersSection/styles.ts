@@ -167,6 +167,12 @@ export const Offers = styled.div`
         ${ImageCtn} {
           margin-top: 4.78rem;
           flex: 1;
+
+          img {
+            width: 70%;
+            height: auto;
+            object-fit: contain;
+          }
         }
 
         ${TextCtn} {
@@ -181,6 +187,12 @@ export const Offers = styled.div`
           margin-top: 5.7rem;
           flex: 1;
           margin-left: auto;
+
+          img {
+            width: 70%;
+            height: auto;
+            object-fit: contain;
+          }
         }
 
         ${TextCtn} {
