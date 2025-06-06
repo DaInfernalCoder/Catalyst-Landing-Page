@@ -36,7 +36,7 @@ export const stats = [
 
 // For desktop
 export const desktopHeaderPhrase = [
-  'Build Your club',
+  'Build Your Club',
   'With Confidence',
 ];
 export const desktopParagraphPhrase = [
