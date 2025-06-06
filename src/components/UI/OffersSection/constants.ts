@@ -8,8 +8,8 @@ export const desktopHeaderPhrases = [
   'Build Your Own Club That Has Real Impact',
 ];
 export const desktopParagraphPhrase = [
-  'Catalyst Entrepreneurship Club provides monthly expert speakers, club guidance,',
-  'and real-world connections to help you launch your first club focused on entrepreneurship and tech.',
+  'Catalyst Entrepreneurship Club provides monthly expert speakers, club',
+  'guidance, and real-world connections to help you launch your first club focused on entrepreneurship and tech.',
 ];
 
 // For mobile
