@@ -1,0 +1,37 @@
+name: Supabase Keepalive
+
+on:
+  schedule:
+    # Run daily at 12:00 UTC (adjust timezone as needed)
+    # This translates to different local times depending on your timezone
+    - cron: '0 12 * * *'
+  
+  # Allow manual triggering for testing
+  workflow_dispatch:
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Run keepalive script
+        env:
+          # Set your production URL here
+          # You can also set this in GitHub repository secrets
+          SITE_URL: ${{ secrets.SITE_URL || 'https://your-site.vercel.app' }}
+        run: node scripts/keepalive.js
+        
+      - name: Log completion
+        run: echo "Keepalive completed at $(date)" 
