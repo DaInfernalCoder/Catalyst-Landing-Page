@@ -18,7 +18,7 @@ const http = require("http");
 // Configuration
 const SITE_URL =
   process.env.SITE_URL || process.env.VERCEL_URL || "http://localhost:3000";
-const KEEPALIVE_ENDPOINT = "/api/keepalive";
+const KEEPALIVE_ENDPOINT = "/api/keepalive"; // Change to "/api/register" for testing if keepalive endpoint doesn't exist
 const TIMEOUT = 30000; // 30 seconds
 
 /**
