@@ -46,7 +46,7 @@ export const desktopParagraphPhrase = [
 
 // For mobile
 export const mobileHeaderPhrase = [
-  'Build Your club',
+  'Build Your Club',
   ' With Confidence',
 ];
 export const mobileParagraphPhrase = [

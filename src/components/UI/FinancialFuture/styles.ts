@@ -10,6 +10,10 @@ export const Inner = styled.div`
   width: 90%;
   max-width: 1440px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    width: 95%;
+  }
 `;
 
 export const Header = styled.header`
@@ -52,6 +56,7 @@ export const CardContainer = styled.div`
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     gap: 2rem;
+    width: 100%;
   }
 `;
 
@@ -63,6 +68,8 @@ export const Card = styled.div`
 
   @media (max-width: 768px) {
     height: 27.5rem;
+    width: 100%;
+    box-sizing: border-box;
   }
 `;
 
@@ -87,7 +94,8 @@ export const TextCtn = styled.div`
   }
 
   @media (max-width: 768px) {
-    margin: 1.5rem 1.5rem 1.75rem 1.5rem;
+    margin: 1.5rem 1rem 1.75rem 1rem;
+    max-width: none;
 
     h3 {
       font-size: 1.5rem;
