@@ -12,6 +12,12 @@
  * - As cron job: 0 12 * * * cd /path/to/project && node scripts/keepalive.js
  */
 
+// Load environment variables from .env.local (only if file exists)
+const fs = require("fs");
+if (fs.existsSync(".env.local")) {
+  require("dotenv").config({ path: ".env.local" });
+}
+
 const https = require("https");
 const http = require("http");
 
