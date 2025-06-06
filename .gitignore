@@ -35,7 +35,7 @@ yarn-error.log*
 next-env.d.ts
 
 # MCP configuration with API keys
-.mcp.json
+.mcp
 
 # Added by Claude Task Master
 # Logs
