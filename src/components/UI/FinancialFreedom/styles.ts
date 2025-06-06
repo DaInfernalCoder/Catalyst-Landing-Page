@@ -73,7 +73,15 @@ export const BannerCtn = styled.div`
   }
 
   @media (max-width: 768px) {
-    height: auto;
+    height: 20rem;
+    border-radius: 1rem;
+    margin: 0 1rem;
+    
+    img {
+      object-fit: cover;
+      object-position: center;
+      border-radius: 1rem;
+    }
   }
 `;
 
@@ -122,7 +130,7 @@ export const BriefNote = styled.div`
 
   p {
     color: var(--Background, #070606);
-    font-size: 8rem;
+    font-size: 6.5rem;
     font-weight: 400;
     max-width: 1440px;
   }
@@ -130,7 +138,7 @@ export const BriefNote = styled.div`
   @media (max-width: 768px) {
     padding: 2rem 1.5rem;
     p {
-      font-size: 3.75rem;
+      font-size: 3rem;
     }
   }
 `;

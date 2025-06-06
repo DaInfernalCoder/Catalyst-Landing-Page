@@ -5,7 +5,7 @@ import ic_arrows_left_right from '../../../../public/svgs/ic_arrows_right_left.s
 // For desktop
 export const desktopHeaderPhrase = ['Your Entrepreneurship Journey,', 'Your Way'];
 export const desktopParagraphPhrase = [
-  'We believe that building your first Startup Club should be accessible and supported.',
+  'We believe that building your first club should be accessible and supported.',
   "That's why we provide the guidance and community you deserve.",
 ];
 export const desktopBriefNotePhrase = [
@@ -18,7 +18,7 @@ export const desktopBriefNotePhrase = [
 // For mobile
 export const mobileHeaderPhrase = ['Your Entrepreneurship', 'Journey, Your Way'];
 export const mobileParagraphPhrase = [
-  'We believe that building your first Startup Club should be',
+  'We believe that building your first club should be',
   "accessible and supported. That's why we provide",
   ' the guidance and community you deserve.',
 ];

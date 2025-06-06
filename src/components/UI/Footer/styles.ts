@@ -18,22 +18,6 @@ export const Inner = styled.main`
   }
 `;
 
-export const FooterLogo = styled.div`
-  width: 16rem;
-  height: 6.72rem;
-  
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-
-  @media (max-width: 768px) {
-    width: 13.2rem;
-    height: 5.6rem;
-  }
-`;
-
 export const FooterMainContent = styled.div`
   display: flex;
   flex-direction: column;
@@ -116,61 +100,6 @@ export const FooterBottom = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-`;
-
-export const Translator = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 1.12rem;
-  cursor: pointer;
-  position: relative;
-
-  h3 {
-    font-size: 1.5rem;
-    font-weight: 400;
-  }
-
-  @media (max-width: 768px) {
-    gap: 0.5rem;
-
-    h3 {
-      font-size: 0.875rem;
-    }
-  }
-`;
-
-export const LanguageDropdown = styled.div`
-  position: absolute;
-  top: -200px;
-  left: 0;
-  background: #1a1a1a;
-  border: 1px solid #3d3d3d;
-  border-radius: 0.5rem;
-  min-width: 200px;
-  z-index: 1000;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-`;
-
-export const LanguageOption = styled.div<{ $isSelected: boolean }>`
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  color: ${props => props.$isSelected ? '#10B981' : '#efefef'};
-  background: ${props => props.$isSelected ? 'rgba(16, 185, 129, 0.1)' : 'transparent'};
-  cursor: pointer;
-  transition: all 0.2s ease;
-
-  &:hover {
-    background: rgba(16, 185, 129, 0.1);
-    color: #10B981;
-  }
-
-  &:first-child {
-    border-radius: 0.5rem 0.5rem 0 0;
-  }
-
-  &:last-child {
-    border-radius: 0 0 0.5rem 0.5rem;
-  }
 `;
 
 export const CopyRight = styled.div`

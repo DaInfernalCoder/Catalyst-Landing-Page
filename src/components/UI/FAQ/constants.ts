@@ -19,23 +19,27 @@ export const animate = {
 
 export const faqData: FAQItem[] = [
   {
-    question: 'How do I start an Catalyst Entrepreneurship Club at my school?',
-    answer:
-      'Fill out the chapter interest form at useCatalyst.ai/clubs. Once approved, you&apos;ll receive a starter kit with club charter, syllabus, and templates, plus an onboarding call with an Catalyst Club Coordinator to help you launch successfully.',
+    question: 'How do I start a Catalyst Entrepreneurship Club at my school?',
+    answer: 'Starting a club is simple! Reach out to us through our contact form to express your interest. Once approved, you\'ll receive a comprehensive starter kit including club charter, curriculum syllabus, and meeting templates. We\'ll also schedule an onboarding call with a Catalyst Club Coordinator to help you launch successfully.',
   },
   {
     question: 'What happens during monthly club meetings?',
-    answer:
-      'Each month features a guest speaker arranged by Catalyst—real founders, VCs, or Startup Club operators including Y Combinator alumni. You&apos;ll also work on hands-on activities like problem discovery, business model development, and pitch practice.',
+    answer: 'Each month features an exclusive guest speaker arranged by Catalystreal founders, VCs, and successful entrepreneurs including Y Combinator alumni. You\'ll also participate in hands-on activities like problem discovery workshops, business model development sessions, and pitch practice with peer feedback.',
   },
   {
     question: 'What will I learn in the yearlong program?',
-    answer:
-      'Follow our "Build Your First Startup Club" curriculum: Semester 1 focuses on discovering problems and defining solutions, while Semester 2 covers building MVPs, getting feedback, and pitching at Demo Day. You\'ll graduate with a real Startup Club project.',
+    answer: 'Follow our comprehensive &quot;Build Your First Startup&quot; curriculum: Semester 1 focuses on discovering real problems and defining innovative solutions, while Semester 2 covers building MVPs, gathering user feedback, and perfecting your pitch for Demo Day. You&apos;ll graduate with a real startup project and valuable entrepreneurial skills.',
   },
   {
     question: 'Do I need prior business experience to join or start a club?',
-    answer:
-      'No experience required! Catalyst Entrepreneurship Club is designed for curious students who want to learn. Whether you&apos;re interested in tech, solving problems, or just exploring business, our program guides you from beginner to founder.',
+    answer: 'Absolutely not! Catalyst Entrepreneurship Club is specifically designed for curious students who want to learn entrepreneurship from the ground up. Whether you&apos;re interested in technology, solving real-world problems, or exploring business concepts, our program provides step-by-step guidance from complete beginner to confident founder.',
+  },
+  {
+    question: 'What support does Catalyst provide to club leaders?',
+    answer: 'Club leaders receive ongoing support including monthly coordinator check-ins, access to our resource library, speaker coordination assistance, and connection to our global network of mentors. We also provide marketing materials and help with event planning to ensure your club thrives.',
+  },
+  {
+    question: 'Can I participate if there is no club at my school yet?',
+    answer: 'Yes! If there is no Catalyst club at your school, you can either start one yourself or join our virtual community program. The virtual program offers the same curriculum and networking opportunities, allowing you to connect with students and mentors from around the world.',
   },
 ];

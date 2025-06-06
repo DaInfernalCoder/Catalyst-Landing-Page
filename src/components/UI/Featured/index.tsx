@@ -1,4 +1,5 @@
 "use client";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import big_banner from "../../../../public/images/big_banner.png";
 import featured_mobile_banner from "../../../../public/images/featured_mobile_banner.png";
@@ -23,28 +24,47 @@ export const imageVariants = {
 
 const Featured = () => {
   const isMobile = useIsMobile();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Prevent hydration mismatch by not rendering until mounted
+  if (!mounted) {
+    return (
+      <Wrapper>
+        <Inner>
+          <h2>Student Alumni From Top Universities</h2>
+          <ParallaxImages>
+            <ParallaxText baseVelocity={-4}>
+              <Image
+                src={universities_image}
+                alt="top universities and institutions"
+              />
+            </ParallaxText>
+          </ParallaxImages>
+        </Inner>
+      </Wrapper>
+    );
+  }
+
   return (
     <Wrapper>
       <Inner>
-        <ImageContainer>
-          <RevealCover />
-          <Div
-            variants={imageVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ amount: 0.25, once: true }}
-          >
-            {isMobile ? (
-              <Image
-                src={featured_mobile_banner}
-                alt="featured_mobile_banner"
-                fill
-              />
-            ) : (
+        {!isMobile && (
+          <ImageContainer>
+            <RevealCover />
+            <Div
+              variants={imageVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ amount: 0.25, once: true }}
+            >
               <Image src={big_banner} alt="big_banner" fill />
-            )}
-          </Div>
-        </ImageContainer>
+            </Div>
+          </ImageContainer>
+        )}
         <h2>Student Alumni From Top Universities</h2>
         <ParallaxImages>
           <ParallaxText baseVelocity={-4}>

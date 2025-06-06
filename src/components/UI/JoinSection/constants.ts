@@ -52,11 +52,6 @@ export const formFields = [
       'High School Sophomore', 
       'High School Junior',
       'High School Senior',
-      'College Freshman',
-      'College Sophomore',
-      'College Junior',
-      'College Senior',
-      'Graduate Student',
       'Other'
     ],
   },
@@ -82,7 +77,7 @@ export const formFields = [
     name: 'message' as keyof FormData,
     label: 'Tell us about yourself (Optional)',
     type: 'textarea',
-    placeholder: 'Share your entrepreneurial goals, Startup Club ideas, or what you hope to achieve with Catalyst Entrepreneurship Club...',
+    placeholder: 'Share your entrepreneurial goals, club ideas, or what you hope to achieve with Catalyst Entrepreneurship Club...',
     required: false,
   },
 ];

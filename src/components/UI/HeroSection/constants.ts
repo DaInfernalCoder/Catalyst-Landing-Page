@@ -6,8 +6,8 @@ export const paragraphPhrases = [
 ];
 
 // For mobile
-export const mobilePhrases = ['Build Your First Startup Club.', 'Launch Your Legacy.'];
+export const mobilePhrases = ['Build Your First club.', 'Launch Your Legacy.'];
 export const mobileParagraphPhrases = [
   'Catalyst Entrepreneurship Club empowers students',
-  'to create Startup Clubs and build the future.',
+  'to create clubs and build the future.',
 ];

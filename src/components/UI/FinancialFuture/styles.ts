@@ -125,9 +125,11 @@ export const Stats = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
 
   @media (max-width: 768px) {
     margin: 3.75rem auto;
+    gap: 0.5rem;
   }
 `;
 
@@ -136,21 +138,29 @@ export const Stat = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 1rem;
+  gap: 0.75rem;
+  flex: 1;
+  min-width: 0;
 
   h1 {
-    font-size: 5rem;
+    font-size: 4.25rem;
     font-weight: 600;
+    line-height: 1;
   }
 
   p {
     color: var(--link-color);
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
+    line-height: 1.2;
+    word-wrap: break-word;
+    hyphens: auto;
   }
 
   @media (max-width: 768px) {
+    gap: 0.5rem;
+    
     h1 {
       font-size: 1.25rem;
     }
@@ -177,15 +187,23 @@ export const Banner = styled.div`
   height: 45rem;
   width: 100%;
   position: relative;
+  border-radius: 0.75rem;
+  overflow: hidden;
 
   img {
     object-fit: cover;
+    border-radius: 0.75rem;
   }
 
   @media (max-width: 768px) {
-    height: 31.25rem;
+    height: 20rem;
+    border-radius: 1rem;
+    margin: 0 1rem;
+    
     img {
-      object-fit: contain;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 1rem;
     }
   }
 `;
