@@ -121,8 +121,8 @@ export const SVGCtn = styled.div`
     background-size: contain;
 
     img {
-      width: 7.5rem;
-      height: 7.5rem;
+      width: 5rem;
+      height: 5rem;
     }
   }
 `;
