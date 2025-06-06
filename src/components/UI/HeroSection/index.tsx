@@ -14,10 +14,25 @@ import {
 
 const HeroSection = () => {
   const isMobile = useIsMobile();
+
+  const scrollToJoinSection = () => {
+    const element = document.getElementById("join");
+    if (element) {
+      const headerOffset = 100; // Offset to account for fixed header
+      const elementPosition = element.offsetTop;
+      const offsetPosition = elementPosition - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <Wrapper>
       <Inner>
-        <Pill>
+        <Pill onClick={scrollToJoinSection}>
           <span>Join the Catalyst Community</span>
           <Image src={ic_chevron_right} alt="chevron-right" />
         </Pill>

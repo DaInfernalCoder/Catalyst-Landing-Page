@@ -66,6 +66,9 @@ export const ImageCtn = styled.div`
   img {
     width: 100%;
     object-fit: contain;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   }
 
   @media (max-width: 768px) {
@@ -79,6 +82,9 @@ export const ImageCtn = styled.div`
       width: 90%;
       margin: 0 auto;
       object-fit: contain;
+      border-radius: 0.75rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     }
   }
 `;

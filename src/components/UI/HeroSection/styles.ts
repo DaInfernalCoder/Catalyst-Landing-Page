@@ -40,11 +40,28 @@ export const Pill = styled.div`
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
   margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: #bdbdbd;
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
 
   span {
     color: var(--light-gray);
     font-size: 1rem;
     font-weight: 400;
+    transition: color 0.3s ease;
+  }
+
+  &:hover span {
+    color: var(--white);
   }
 `;
 
