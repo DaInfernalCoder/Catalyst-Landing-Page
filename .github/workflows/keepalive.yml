@@ -27,9 +27,6 @@ jobs:
         run: npm ci
 
       - name: Run keepalive script
-        env:
-          # Uses GitHub secret SITE_URL, or falls back to the current production URL
-          SITE_URL: ${{ secrets.SITE_URL || 'https://catalyst-landing-page-eta.vercel.app' }}
         run: node scripts/keepalive.js
 
       - name: Log completion

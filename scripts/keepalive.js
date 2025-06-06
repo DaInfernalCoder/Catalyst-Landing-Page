@@ -12,18 +12,11 @@
  * - As cron job: 0 12 * * * cd /path/to/project && node scripts/keepalive.js
  */
 
-// Load environment variables from .env.local (only if file exists)
-const fs = require("fs");
-if (fs.existsSync(".env.local")) {
-  require("dotenv").config({ path: ".env.local" });
-}
-
 const https = require("https");
 const http = require("http");
 
-// Configuration
-const SITE_URL =
-  process.env.SITE_URL || process.env.VERCEL_URL || "http://localhost:3000";
+// Configuration - hardcoded for reliability
+const SITE_URL = "https://catalyst-landing-page-eta.vercel.app";
 const KEEPALIVE_ENDPOINT = "/api/keepalive"; // Change to "/api/register" for testing if keepalive endpoint doesn't exist
 const TIMEOUT = 30000; // 30 seconds
 
