@@ -35,7 +35,7 @@ const Featured = () => {
     return (
       <Wrapper>
         <Inner>
-          <h2>Student Alumni From Top Universities</h2>
+          <h2>This program was created by alumni from top universities</h2>
           <ParallaxImages>
             <ParallaxText baseVelocity={-4}>
               <Image
@@ -65,7 +65,7 @@ const Featured = () => {
             </Div>
           </ImageContainer>
         )}
-        <h2>Student Alumni From Top Universities</h2>
+        <h2>This program was created by alumni from top universities</h2>
         <ParallaxImages>
           <ParallaxText baseVelocity={-4}>
             <Image

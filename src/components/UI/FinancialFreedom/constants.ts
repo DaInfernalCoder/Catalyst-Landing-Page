@@ -3,7 +3,7 @@ import ic_circle_stack from '../../../../public/svgs/ic_circle_stack.svg';
 import ic_arrows_left_right from '../../../../public/svgs/ic_arrows_right_left.svg';
 
 // For desktop
-export const desktopHeaderPhrase = ['Your Entrepreneurship Journey,', 'Your Way'];
+export const desktopHeaderPhrase = ['Your Journey,', 'Your Way'];
 export const desktopParagraphPhrase = [
   'We believe that building your first club should be accessible and supported.',
   "That's why we provide the guidance and community you deserve.",
@@ -16,7 +16,7 @@ export const desktopBriefNotePhrase = [
 ];
 
 // For mobile
-export const mobileHeaderPhrase = ['Your Entrepreneurship', 'Journey, Your Way'];
+export const mobileHeaderPhrase = ['Your Journey,', 'Your Way'];
 export const mobileParagraphPhrase = [
   'We believe that building your first club should be',
   "accessible and supported. That's why we provide",
