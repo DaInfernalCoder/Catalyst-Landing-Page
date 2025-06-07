@@ -17,7 +17,7 @@ export interface FormErrors {
   general?: string;
 }
 
-export const desktopHeaderPhrase = ["Start Your Entrepreneurship Journey"];
+export const desktopHeaderPhrase = ["Start Your Journey"];
 
 export const formFields = [
   {

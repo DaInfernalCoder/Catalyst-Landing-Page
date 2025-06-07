@@ -95,8 +95,11 @@ export const TextCtn = styled.div`
   max-width: 32.25rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   gap: 1rem;
-  margin-top: auto;
+  margin-top: 2rem;
 
   h2 {
     font-size: 2rem;
